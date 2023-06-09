@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="fontsawesome/css/all.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Landing</title>
+</head>
+<style>
+  @media only screen and (max-width: 1000px) {
+    header {
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+    }
+
+    #closePopup {
+      display: block;
+    }
+
+    .navs {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+      display: none;
+    }
+
+    nav {
+      position: absolute;
+      /* display: none; */
+      top: 0%;
+      right: 0;
+      background-color: rgb(22, 22, 120);
+      z-index: 999;
+      width: 50%;
+      float: right;
+    }
+
+    nav ul {
+      display: block;
+      padding: 1rem;
+    }
+
+    nav ul li {
+      padding: 1.5rem;
+    }
+
+    .services-card {
+
+      width: 80%;
+      /* Update the width to 70% for responsive layout */
+      margin: .5rem 0;
+      padding: 1rem;
+
+    }
+
+    .logo {
+      width: 30%;
+      background-color: grey;
+      height: 60px;
+    }
+
+    .nav {
+      display: block;
+    }
+
+    .reason-left {
+      display: none;
+
+      width: 30%;
+    }
+
+    .reason-right {
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .reason-card-box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      padding: 0;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .reason-card {
+      width: 40%;
+      padding: 1rem;
+      word-wrap: break-word;
+      font-size: .9rem;
+      color: white;
+      background-color: rgb(22, 22, 120);
+      text-align: center;
+      border-radius: .5rem;
+      text-align: left;
+    }
+
+    .loan-calculator {
+      width: 85%;
+      margin-bottom: .7rem;
+    }
+
+    .result {
+      width: 90%;
+      margin-right: 0;
+    }
+
+    .about-right {
+      width: 90%;
+    }
+
+    .contact-left {
+      width: 100%;
+
+    }
+
+    .contact-left form {
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .contact-left h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 1rem;
+      color: rgb(22, 22, 120);
+
+    }
+
+    .foot-box {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .foot-card .logo {
+      width: 50%;
+      margin: .5rem 0;
+
+    }
+
+    .foot-head {
+      justify-content: center;
+      display: flex;
+    }
+
+    .foot-card {
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .services-card-box {
+      width: 85%;
+      padding: .5rem;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .logo {
+      width: 20%;
+      float: left;
+    }
+
+    .services-card {
+
+      width: 90%;
+      /* Update the width to 70% for responsive layout */
+      margin: .5rem 0;
+      padding: 2rem;
+
+    }
+
+
+    .reason-right {
+      width: 100%;
+      padding: .5rem;
+    }
+
+    .reason-card-box {
+      display:
+        flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .reason-card {
+      width: 100%;
+      margin: .5rem 0;
+    }
+
+    .calculator-box {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .loan-calculator {
+      width: 100%;
+    }
+
+    .calc {
+      padding: 1rem;
+
+    }
+
+    .loan-calculator button {
+      padding: 1rem;
+    }
+
+    .result {
+      width: 100%;
+
+      padding: 1rem;
+      margin-right: 0;
+    }
+
+    .about-box {
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .about-left {
+      display: none;
+    }
+
+    .about-card-box {
+      border-bottom: 2px solid white;
+    }
+
+    .about-right {
+      width: 100%;
+      padding: .5rem;
+    }
+
+    .contact-box {
+      flex-direction: column-reverse;
+      padding-top: 0;
+    }
+
+    .contact-left {
+      width: 100%;
+      text-align: left;
+      padding: .5rem;
+
+    }
+
+    .contact-right {
+      margin-top: 1rem;
+    }
+
+    .contact-left form {
+      /* border: 2px solid black; */
+      width: 100%;
+      padding: .5rem;
+    }
+
+    .service-head {
+      margin-bottom: 0;
+    }
+
+    .foot-card {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  #signs:hover {
+    background-color: transparent;
+  }
+
+  @media only screen and (max-width: 3750px) {
+    nav {
+      top: 0;
+    }
+  }
+</style>
+
+<body>
+  <header>
+    <div class="logo">
+      vbnlvgbn
+    </div>
+    <div class="navs" id="overlay">
+
+      <nav id="popupContainer">
+        <ul>
+          <li id="closePopup">&times;</li>
+          <a href="#">
+            <li> Home </li>
+          </a>
+          <a href="#services">
+            <li> Services </li>
+          </a>
+          <a href="#about">
+            <li>About Us</li>
+          </a>
+          <a href="#contact">
+            <li>Contact Us</li>
+          </a>
+          <a href="./register.html">
+            <li id="signs">Sign Up</li>
+          </a>
+          <a href="./login.html">
+            <li>Sign In</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav" id="openPopup">
+      <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+  </header>
+  <div class="banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="content">
+              <h3>Get your Personal loan</h3>
+              <p>Instant Approval for your Personal Loan</p>
+              <div class="btn">
+                <button>Get started</button>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="content">
+              <h3>Get your home loan</h3>
+              <p>Instant Approval for your home Loan</p>
+              <div class="btn">
+                <button>Get started</button>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="content">
+              <h3>Get your Business Loan</h3>
+              <p>Instant Approval for your Business loan</p>
+              <div class="btn">
+                <button>Get started</button>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="content">
+              <h3>Get your Education Loan</h3>
+              <p>Instant Approval for your Education loan</p>
+              <div class="btn">
+                <button>Get started</button>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+  </div>
+  <section>
+    <div class="reason">
+      <div class="reason-head">
+        <h3>Reasons to choose us</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eveniet accusantium numquam unde
+          perspiciatis sint, harum minus eaque iste nostrum rem itaque voluptas inventore saepe! Odit nulla est totam,
+          ipsa officiis, sunt odio ad culpa illo laudantium cum, deleniti iste!</p>
+        <div class="underline">
+          <p></p>
+        </div>
+      </div>
+      <div class="reason-box">
+        <div class="reason-left">
+
+        </div>
+        <div class="reason-right">
+          <div class="reason-card-box">
+            <div class="reason-card">
+              <h3>Easy Loans Approval</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse consequatur nam dicta labore
+                mollitia, nihil molestiae provident iusto neque! Facere fuga et error rem numquam! Dolor, beatae! Quia,
+                hic.</p>
+            </div>
+            <div class="reason-card">
+              <h3>Fast and Free</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse consequatur nam dicta labore
+                mollitia, nihil molestiae provident iusto neque! Facere fuga et error rem numquam! Dolor, beatae! Quia,
+                hic.</p>
+            </div>
+          </div>
+          <div class="reason-card-box">
+            <div class="reason-card">
+              <h3>Hastle Free</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse consequatur nam dicta labore
+                mollitia, nihil molestiae provident iusto neque! Facere fuga et error rem numquam! Dolor, beatae! Quia,
+                hic.</p>
+            </div>
+            <div class="reason-card">
+              <h3>100% Safe and Secure</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse consequatur nam dicta labore
+                mollitia, nihil molestiae provident iusto neque! Facere fuga et error rem numquam! Dolor, beatae! Quia,
+                hic.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="services">
+      <div class="services-head">
+        <h3>Our Services</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eveniet accusantium numquam unde
+          perspiciatis sint, harum minus eaque iste nostrum rem itaque voluptas inventore saepe! Odit nulla est totam,
+          ipsa officiis, sunt odio ad culpa illo laudantium cum, deleniti iste!</p>
+        <div class="underline">
+          <p></p>
+        </div>
+      </div>
+      <div class="services-card-box">
+        <div class="services-card">
+          <div class="card-head">
+            <p><i class="fa-solid fa-house-user"></i></p>
+          </div>
+          <h3>Home Loan</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reprehenderit totam dolore incidunt
+            iste, vel cumque voluptatum possimus ipsa, voluptas corrupti reiciendis quae aperiam doloribus beatae
+            numquam accusantium eos illum!</p>
+        </div>
+        <div class="services-card">
+          <div class="card-head">
+            <p><i class="fa-solid fa-sack-dollar"></i></p>
+          </div>
+          <h3>Personal Loan</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reprehenderit totam dolore incidunt
+            iste, vel cumque voluptatum possimus ipsa, voluptas corrupti reiciendis quae aperiam doloribus beatae
+            numquam accusantium eos illum!</p>
+        </div>
+        <div class="services-card">
+          <div class="card-head">
+            <p><i class="fa-solid fa-business-time"></i></p>
+          </div>
+          <h3>Business Loan</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reprehenderit totam dolore incidunt
+            iste, vel cumque voluptatum possimus ipsa, voluptas corrupti reiciendis quae aperiam doloribus beatae
+            numquam accusantium eos illum!</p>
+        </div>
+        <div class="services-card">
+          <div class="card-head">
+            <p><i class="fa-solid fa-school"></i></p>
+          </div>
+          <h3>Education Loan</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reprehenderit totam dolore incidunt
+            iste, vel cumque voluptatum possimus ipsa, voluptas corrupti reiciendis quae aperiam doloribus beatae
+            numquam accusantium eos illum!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="calculator">
+      <div class="calculator-box">
+
+
+        <div class="loan-calculator">
+          <div class="calc">
+            <h2>Loan Calculator</h2>
+
+
+
+            <div class="form-group">
+              <label for="loan-amount">Loan Amount:</label>
+              <input type="range" id="loan-amount" min="1000" max="100000" step="1000" value="50000">
+              <span id="loan-amount-value">$50,000</span>
+            </div>
+
+            <div class="form-group">
+              <label for="loan-duration">Loan Duration (in months):</label>
+              <input type="range" id="loan-duration" min="1" max="36" step="1" value="12">
+              <span id="loan-duration-value">12 months</span>
+            </div>
+
+            <div class="form-group">
+              <label for="loan-category">Loan Category:</label>
+              <select id="loan-category">
+                <option value="Personal Loan">Personal Loan</option>
+                <option value="Education Loan">Education Loan</option>
+                <option value="House Loan">House Loan</option>
+                <option value="Business Loan">Business Loan</option>
+              </select>
+            </div>
+            <div class="btn">
+
+              <button id="calculate-btn">Calculate</button>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="result">
+          <h3>Loan Details:</h3>
+          <p><strong>Loan Category:</strong> <span id="result-category"></span></p>
+          <p><strong>Loan Amount:</strong> <span id="result-amount">$</span></p>
+          <p><strong>Loan Duration:</strong> <span id="result-duration">months</span></p>
+          <p><strong>Interest Rate:</strong> <span id="result-rate">%</span></p>
+          <p><strong>Monthly Payment:</strong> <span id="result-monthly">$</span></p>
+          <p><strong>Total Amount to be Paid:</strong> <span id="result-total">$</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="reason">
+      <div class="reason-head">
+        <h3>About us</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eveniet accusantium numquam unde
+          perspiciatis sint, harum minus eaque iste nostrum rem itaque voluptas inventore saepe! Odit nulla est totam,
+          ipsa officiis, sunt odio ad culpa illo laudantium cum, deleniti iste!</p>
+        <div class="underline">
+          <p></p>
+        </div>
+      </div>
+      <div class="about-box">
+        <div class="about-left">
+
+        </div>
+        <div class="about-right">
+          <div class="about-card-box">
+            <h2>Our Mission</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+          </div>
+          <div class="about-card-box" style="border-bottom: none;">
+            <h2>Our Vision</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, deserunt?</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="customer">
+      <div class="customer-head">
+        <h3>Our customers</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eveniet accusantium numquam unde
+          perspiciatis sint, harum minus eaque iste nostrum rem itaque voluptas inventore saepe! Odit nulla est totam,
+          ipsa officiis, sunt odio ad culpa illo laudantium cum, deleniti iste!</p>
+        <div class="underline">
+          <p></p>
+        </div>
+      </div>
+      <div class="testimonials-container">
+        <div class="swiper-containers">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="./images/amount.jpg" alt="Customer 1">
+                <h3 class="customer-name">John Doe</h3>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <p class="testimony">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum nunc ac
+                  lorem sagittis, vitae molestie magna commodo.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="./images/bussiness.jpg" alt="Customer 2">
+                <h3 class="customer-name">Jane Smith</h3>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <p class="testimony">Vestibulum condimentum orci a tincidunt ultrices. Pellentesque id sapien a mi
+                  vehicula mattis in in erat.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="./images/daydue.jpg" alt="Customer 3">
+                <h3 class="customer-name">Mark Johnson</h3>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <p class="testimony">Maecenas scelerisque augue at arcu efficitur malesuada. Duis nec magna at mi
+                  lacinia consectetur.</p>
+                <!-- <div class="swiper-paginations"></div> -->
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="./images/calendar.jpg" alt="Customer 4">
+                <h3 class="customer-name">Sarah Davis</h3>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimony">Maecenas scelerisque augue at arcu efficitur malesuada. Duis nec magna at mi
+                  lacinia consectetur.</p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-paginations"></div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="contact">
+    <div class="contact">
+      <div class="services-head">
+        <h3>Contact Us</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eveniet accusantium numquam unde
+          perspiciatis sint, harum minus eaque iste nostrum rem itaque voluptas inventore saepe! Odit nulla est totam,
+          ipsa officiis, sunt odio ad culpa illo laudantium cum, deleniti iste!</p>
+        <div class="underline">
+          <p></p>
+        </div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-left">
+          <form id="enquiry_form">
+            <h2>Send a Message</h2>
+            <div class="form-group">
+              <label for="loan-amount">Name:</label>
+              <input type="text" name="mailer_name" min="1" required>
+            </div>
+            <div class="form-group">
+              <label for="loan-amount">Email:</label>
+              <input type="email" name="email_address" required>
+            </div>
+            <div class="form-group">
+              <label for="loan-amount">Phone:</label>
+              <input type="text" name="phone_number" required>
+            </div>
+            <div class="form-group">
+              <label for="loan-amount">Subject:</label>
+              <input type="text" name="mail_subject" required>
+            </div>
+            <div class="form-group">
+              <label for="">Message</label>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="incorrect">
+               * One or more data you provide is not valid
+            </div>
+            <div class="btn">
+              <button id="submit-btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-right">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="foot-box">
+      <div class="foot-card">
+        <div class="foot-head">
+          <div class="logo">
+            vbnlvgbn
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatibus dolore odio quisquam at
+          explicabo voluptas, ipsa obcaecati fugit quia ex eius, eum aut, natus beatae porro odit in fugiat.
+        </p>
+      </div>
+      <div class="foot-card">
+        <div class="foot-head">
+          <h3>Quick Links</h3>
+        </div>
+        <ul>
+          <li>Services</li>
+          <li>About Us</li>
+          <li>Get Started</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="foot-card">
+        <div class="foot-head">
+          <h3>Address</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatibus dolore odio quisquam at
+          explicabo voluptas, ipsa obcaecati fugit quia ex eius, eum aut, natus beatae porro odit in fugiat.
+        </p>
+      </div>
+      <div class="foot-card">
+        <div class="foot-head">
+          <h3>Social Links</h3>
+        </div>
+        <p><i class="fa-brands fa-facebook"></i>&nbsp; <i class="fa-brands fa-square-instagram"></i> &nbsp;<i
+            class="fa-brands fa-twitter"></i>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="fontsawesome/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="color.css">
+  <link rel="stylesheet" href="mobile.css">
+  <title>Order-Page-Tamopei</title>
+</head>
+<style>
+  .home{
+    display: none;
+  }
+  .home.show {
+  display: block;
+  text-align: left;
+ padding: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  background-size: cover;
+  /* height: 135vh; */
+  width: 100%;
+}
+@media only screen and (max-width: 500px){
+
+table{
+width: 100%;
+border: 2px solid red;
+}
+}
+</style>
+<body>
+
+    <main>
+      <header>
+        <div class="logo">
+
+        </div>
+        <div class="welcome">
+          <p>Welcome Adedoyin Samuel</p>
+        </div>
+        <div class="info">
+          <div class="image">
+            <img src="" alt="">
+          </div>
+          <div class="id">
+            <p> ID: 100349287</p>
+          </div>
+        </div>
+      </header>
+      <section class="body-content">
+
+        <div class="navs" id="overlay">
+          <nav id="popupContainer">       
+               <ul>
+            <li id="closePopup" style="font-size: 2rem;padding: .3rem; border: none;">&times;</li>
+            <li class=""><a href="index.html">
+              <i class="fa-solid fa-house"></i><span>HOME</span>
+            </a>
+            </li>
+            <li class="active1"><a href="Loans.html">
+              <i class="fa-solid fa-landmark"></i><span>LOANS</span>
+            </a>
+            </li>
+           
+         
+ <li class=""><a href="Profile.html">
+              <i class="fa-solid fa-user"></i><span>PROFILE</span>
+            </a>
+            </li>
+            <!-- <li onclick="toggleTable(3)">
+              <i class="fa-solid fa-lock"></i></i><span>PASSWORD</span>
+            </li> -->
+            <li class=""><a href="./Landing/login.html">
+              <i class="fa-solid fa-power-off"></i><span>LOGOUT</span>
+            </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+        <div class="box-card">
+
+         
+         
+       <!-- All customers -->
+
+  <div class="history table-content">
+    <div class="nav" id="openPopup">
+      <i  class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+    <div class="apply-loan">
+      <button onclick="showModalL()" >Apply</button>
+    </div>
+       
+            <div class="loan-head">
+              <p>Loan History</p>
+              <p>All Loans Application: 10</p>
+            </div>
+            <div class="table">
+
+     
+              <table>
+                <thead>
+                  <th>Amount</th>
+                  <th>Interest</th>
+                  <th>Total</th>
+                  <th>Due Date</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModal()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                  <tr>
+                    <td>500,000</td>
+                    <td>50,000</td>
+                    <td>550,000</td>
+                    <td>25-09-2023</td>
+                    <td><span>Completed</span></td>
+                    <td> <i onclick="showModalC()" class="fa-solid fa-eye"></i></td>
+  
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+       
+
+
+
+
+<!-- /client-guarantor modal -->
+
+
+<!-- Loan modal -->
+<div class="profile"  id="loan1">
+
+  <div class="container" id="loan-receipt">
+    <div class="exit">
+      <span class="close" onclick="closeModalC()">&times;</span>
+    </div>
+    <h2>Loan Receipt</h2>
+    <div class="receipt">
+      
+      <div class="header">
+        <h3>QUICKFUNDS</h3>
+        <p>Date: <span id="date"></span></p>
+      </div>
+      <div class="receipt-content">
+        <p><strong>Name:</strong>Adedoyin Samuel</p>
+        <p><strong>Merchant:</strong>Global Tech</p>
+        <p><strong>Loan Amount:</strong> 10,000</p>
+        <p><strong>Interest Rate:</strong> 5%</p>
+        <p><strong>Total:</strong> 15,000</p>
+        <p><strong>Loan Date:</strong> 25-09-2023</p>
+        <p><strong>Loan Duration:</strong> 12 months</p>
+        <p><strong>Due Date:</strong> 25-09-2023</p>
+        <p><strong>Monthly Payment</strong> 1,250</p>
+        <p><strong>Loan Status:</strong> Completed</p>
+        
+      </div>
+      
+      <div class="footer">
+        <p>Thank you for using QUICKFUNDS!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- pending loan -->
+<div class="profile"  id="loan2">
+
+  <div class="container" id="loan-receipt">
+    <div class="exit">
+      <span class="close" onclick="closeModalA(), closeAP()">&times;</span>
+    </div>
+    <h2>Loan Receipt</h2>
+    <div class="receipt">
+      
+      <div class="header">
+        <h3>QUICKFUNDS</h3>
+        <p>Date: <span id="date"></span></p>
+      </div>
+      <div class="receipt-content">
+        <p><strong>Name:</strong>Adedoyin Samuel</p>
+        <p><strong>Merchant:</strong>Global Technologies</p>
+        <p><strong>Loan Amount:</strong> 10,000</p>
+        <p><strong>Interest Rate:</strong> 5%</p>
+        <p><strong>Total:</strong> 15,000</p>
+        <p><strong>Loan Date:</strong> 25-09-2023</p>
+        <p><strong>Loan Duration:</strong> 12 months</p>
+        <p><strong>Due Date:</strong> 25-09-2023</p>
+        <p><strong>Monthly Payment</strong> 1,250</p>
+        <p><strong>Loan Status:</strong> Completed</p>
+        
+      </div>
+      
+      <div class="footer">
+       <button class="p-button" style="background-color: rgb(32, 165, 32);">Approve</button>
+       <button onclick="showAP()" class="p-button" style="background-color: rgb(203, 34, 34);">Reject</button>
+      </div>
+      <div class="footer"  id="approve">
+      <textarea name="" id="" cols="30" rows="10" placeholder="Please input reasons "></textarea>
+
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ pending loan -->
+<!-- create approve modal -->
+<div class="profile" id="loan">
+
+  <div class="Loan-create">
+    <div class="exit">
+      <span class="close" onclick="closeModalL()">&times;</span>
+    </div>
+    <h2>Create New Loan</h2>
+    <form >
+      <div class="form-group">
+        <label for="borrowerName">Category:</label>
+       <select name="" id="">
+        <option value="Personal">Personal Loan</option>
+        <option value="House">House Loan</option>
+        <option value="Business">Business Loan</option>
+        <option value="Education">Education Loan</option>
+       </select>
+      </div>
+      <div class="form-group">
+        <label for="borrowerName">Name:</label>
+        <input type="text" id="" value=""  required>
+      </div>
+      <div class="form-group">
+        <label for="borrowerName">Category:</label>
+       <select name="" id="">
+        <option value="Personal">Global Technologies</option>
+        <option value="House">Sammy Industries</option>
+        <option value="Business">Google</option>
+        <option value="Education">Opay</option>
+       </select>
+      </div>
+
+      <div class="form-group">
+        <label for="loanAmount">Loan Amount:</label>
+        <input type="text" id="" required>
+      </div>
+      <div class="form-group">
+        <label for="interestRate">Interest Rate:</label>
+        <input type="text" id=""  step="0.01" disabled required>
+      </div>
+      <div class="form-group">
+        <label for="loanDuration">Loan Duration (months):</label>
+        <input type="text" id="" required>
+      </div>
+      <div class="form-group">
+        <label for="loanDuration">Total:</label>
+        <input type="text" id="" required disabled>
+      </div>
+      <div class="form-group">
+        <label for="loanDuration">Payments (Monthly):</label>
+        <input type="text" id="" required disabled>
+      </div>
+    
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>
+        <!-- create personal loan -->
+
+      
+
+
+
+
+
+        </div>
+        </div>
+      </section>
+
+    </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

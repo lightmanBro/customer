@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="fontsawesome/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="color.css">
+  <link rel="stylesheet" href="mobile.css">
+  <title>Order-Page-Tamopei</title>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <div class="logo">
+
+      </div>
+      <div class="welcome">
+        <p>Welcome Adedoyin Samuel</p>
+      </div>
+      <div class="info">
+        <div class="image">
+          <img src="" alt="">
+        </div>
+        <div class="id">
+          <p> ID: 100349287</p>
+        </div>
+      </div>
+    </header>
+    <section class="body-content">
+      <div class="navs" id="overlay">
+        <nav id="popupContainer">
+          <ul>
+            <li id="closePopup" style="font-size: 2rem;padding: .3rem; border: none;">&times;</li>
+            <li class="active1"><a href="index.html">
+                <i class="fa-solid fa-house"></i><span>HOME</span>
+              </a>
+            </li>
+            <li class=""><a href="Loans.html">
+                <i class="fa-solid fa-landmark"></i><span>LOANS</span>
+              </a>
+            </li>
+
+
+            <li class=""><a href="Profile.html">
+                <i class="fa-solid fa-user"></i><span>PROFILE</span>
+              </a>
+            </li>
+            <!-- <li onclick="toggleTable(3)">
+              <i class="fa-solid fa-lock"></i></i><span>PASSWORD</span>
+            </li> -->
+            <li class=""><a href="./Landing/login.html">
+                <i class="fa-solid fa-power-off"></i><span>LOGOUT</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="box-card">
+        <div class="table-content">
+          <div class="nav" id="openPopup">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </div>
+          <div class="content ">
+
+            <div class="loan-card">
+              <div class="card-flex">
+
+                <div class="card" id="Amount">
+                  <p><span>PENDING LOAN</span></p>
+                  <P>20</P>
+                </div>
+                <div class="card" id="calendar">
+                  <p><span>ACTIVE LOAN</span></p>
+                  <P>60</P>
+                </div>
+              </div>
+              <div class="card-flex">
+
+                <div class="card" id="due">
+                  <p><span>OVER DUE</span></p>
+                  <P>12</P>
+                </div>
+                <div class="card" id="interest">
+                  <p><span>COMPLETED LOAN</span></p>
+                  <P>40,000</P>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="content ">
+            <div class="loan-card">
+              <div class="card-flex">
+
+                <div class="card" id="total">
+                  <p><span>TOTAL PENDING</span></p>
+                  <P>340,000</P>
+                </div>
+                <div class="card" id="time">
+                  <p><span>TOTAL ACTIVE</span></p>
+                  <P>500,000</P>
+                </div>
+              </div>
+              <div class="card-flex">
+
+                <div class="card" id="status">
+                  <p><span>TOTAL DUE</span></p>
+                  <P>300,000</P>
+                </div>
+                <div class="card" id="months">
+                  <p><span>TOTAL CUSTOMERS</span></p>
+                  <P>50</P>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-percent ">
+            <p>Loan Percentage: 60%</p>
+            <div class="percent">
+              <div class="range">
+
+              </div>
+            </div>
+          </div>
+          <div class="loan-card">
+            <div class="card-flexs">
+
+              <div class="card" id="personal">
+                <p>Personal Loan</p>
+                <P>Get your life secured</P>
+
+                <div class="note">
+                  <p>Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Facilis, nobis. Eveniet ea eos recusandae molestias porro
+                    officia omnis cum dolorem?</p>
+
+                  <button onclick="showModalP()">Apply</button>
+                </div>
+              </div>
+
+              <div class="card" id="house">
+                <p>House Loan</p>
+                <P>You deserve a house</P>
+                <div class="note">
+                  <p>Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Facilis, nobis. Eveniet ea eos recusandae molestias porro
+                    officia omnis cum dolorem?</p>
+
+                  <button onclick="showModalP()">Apply</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-flexs">
+
+              <div class="card" id="bussiness">
+                <p><span>Bussiness Loan</span></p>
+                <P>Bussiness finance</P>
+                <div class="note">
+                  <p>Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Facilis, nobis. Eveniet ea eos recusandae molestias porro
+                    officia omnis cum dolorem?</p>
+
+                  <button onclick="showModalP()">Apply</button>
+                </div>
+              </div>
+
+
+              <div class="card" id="education">
+                <p><span>Education Loan</span></p>
+                <P>Get a dgree</P>
+                <div class="note">
+                  <p>Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Facilis, nobis. Eveniet ea eos recusandae molestias porro
+                    officia omnis cum dolorem?</p>
+
+                  <button onclick="showModalP()">Apply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- /Password-->
+        <!-- modal box -->
+        <!-- client-profile modal -->
+
+
+        <!-- create loan modal -->
+
+        <!-- create personal loan -->
+
+        <div class="profile" id="personal-loan">
+
+          <div class="Loan-create">
+            <div class="exit">
+              <span class="close" onclick="closeModalP()">&times;</span>
+            </div>
+            <h2>Create New Loan</h2>
+            <form>
+              <div class="form-group">
+                <label for="borrowerName">Category:</label>
+                <input type="text" id="" value="Personal Loan" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="borrowerName">Name:</label>
+                <input type="text" id="" value="Adedoyin Samuel" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="interestRate">Interest Rate:</label>
+                <input type="text" id="" step="0.01" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Loan Duration (months):</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Total:</label>
+                <input type="text" id="" required disabled>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Payments (Monthly):</label>
+                <input type="text" id="" required disabled>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- create house loan -->
+
+        <div class="profile" id="house-loan">
+
+          <div class="Loan-create">
+            <div class="exit">
+              <span class="close" onclick="closeModalH()">&times;</span>
+            </div>
+            <h2>Create New Loan</h2>
+            <form>
+              <div class="form-group">
+                <label for="borrowerName">Category:</label>
+                <input type="text" id="" value="House Loan" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="borrowerName">Name:</label>
+                <input type="text" id="" value="Adedoyin Samuel" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="interestRate">Interest Rate:</label>
+                <input type="text" id="" step="0.01" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Loan Duration (months):</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Total:</label>
+                <input type="text" id="" required disabled>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Payments (Monthly):</label>
+                <input type="text" id="" required disabled>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- create business loan -->
+
+        <div class="profile" id="business-loan">
+
+          <div class="Loan-create">
+            <div class="exit">
+              <span class="close" onclick="closeModalB()">&times;</span>
+            </div>
+            <h2>Create New Loan</h2>
+            <form>
+              <div class="form-group">
+                <label for="borrowerName">Category:</label>
+                <input type="text" id="" value="Business Loan" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="borrowerName">Name:</label>
+                <input type="text" id="" value="Adedoyin Samuel" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="interestRate">Interest Rate:</label>
+                <input type="text" id="" step="0.01" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Loan Duration (months):</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Total:</label>
+                <input type="text" id="" required disabled>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Payments (Monthly):</label>
+                <input type="text" id="" required disabled>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- create personal loan -->
+
+        <div class="profile" id="education-loan">
+
+          <div class="Loan-create">
+            <div class="exit">
+              <span class="close" onclick="closeModalE()">&times;</span>
+            </div>
+            <h2>Create New Loan</h2>
+            <form>
+              <div class="form-group">
+                <label for="borrowerName">Category:</label>
+                <input type="text" id="" value="Education Loan" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="borrowerName">Name:</label>
+                <input type="text" id="" value="Adedoyin Samuel" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="interestRate">Interest Rate:</label>
+                <input type="text" id="" step="0.01" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Loan Duration (months):</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Total:</label>
+                <input type="text" id="" required disabled>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Payments (Monthly):</label>
+                <input type="text" id="" required disabled>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

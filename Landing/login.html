@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/personal.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    flex-direction: column;
+    height: 100vh;
+
+
+  }
+
+  header {
+    border: 2px solid red;
+    padding: 1rem;
+  }
+
+  form {
+    background-color: #ccc;
+    width: 50%;
+    max-width: 70%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .25rem;
+
+  }
+
+  h2 {
+    text-align: center;
+    color: #2a2929;
+  }
+
+  .content {
+    width: 80%;
+    padding: 1rem;
+    border-radius: .25rem;
+    border: 2px solid rgb(125, 125, 125);
+  }
+
+  .form-group {
+    margin-bottom: .5rem;
+    /* border: 2px solid green; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2a2929;
+    /*border: 2px solid red;*/
+    width: 80%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    border-radius: .15rem;
+    border: 1px solid #ccc;
+    outline: #ccc;
+  }
+
+  button[type="submit"] {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    background-color: rgb(64, 64, 212);
+    color: #fff;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+    margin-top: .5rem;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 850px) {
+
+    .container {
+      margin: 0;
+
+      padding: 1rem 0;
+    }
+
+    form {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .container {
+
+      padding: 1rem 0;
+      height: 100vh;
+      margin: 0;
+
+    }
+
+    form {
+      width: 100%;
+
+    }
+
+    .content {
+      width: 95%;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .container {
+
+      padding: 1rem 0;
+      height: 100vh;
+      margin: 0;
+
+    }
+  }
+</style>
+
+<body>
+  <div class="container">
+    <header>
+      dcgfvgbhnkbvcxdcfgvjhb
+    </header>
+    <form id="registrationForm">
+      <h2>Login </h2>
+      <div class="content">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" required>
+          <span id="passwordError" class="error">One or more input value is incorrect</span>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" required>
+        </div>
+      </div>
+      <button type="submit" id="submit-btn">Login</button>
+
+    </form>
+  </div>
+
+  <script src="./scripts/login.js"></script>
+</body>
+
+</html>

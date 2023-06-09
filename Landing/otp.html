@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<style>
+              body{
+                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/personal.jpg);
+                    background-size: cover;
+                    padding: 0;
+                    margin: 0;
+          }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+form {
+          background-color: #ccccccaf;
+                    width: 50%;
+                    height: 25%;
+                    max-width: 70%;
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: .35rem;
+}
+
+h2 {
+  text-align: center;
+}
+.otp-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  /* border: 2px solid green; */
+}
+input[type="text"] {
+  width: 10%;
+  height: 30px;
+  text-align: center;
+  background: none;
+}
+
+input{
+  border: none;
+  border-bottom: .2rem solid #2a2929;
+  outline: none;
+}
+.btn{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+}
+button[type="submit"] {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  background-color: rgb(64, 64, 212);
+  color: #fff;
+  border: none;
+  border-radius: .15rem;
+  cursor: pointer;
+  margin-top: .5rem;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+header{
+                    border: 2px solid red;
+                    padding: 1rem;
+          }
+@media only screen and (max-width: 850px){
+          form {
+          background-color: #ccc;
+                    width: 75%;
+                    height: 25%;
+                    max-width: 70%;
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: .35rem;
+}
+}
+</style>
+
+<body>
+  <div class="container">
+          <header>
+                    dcgfvgbhnkbvcxdcfgvjhb
+          </header>
+    <form id="otpForm">
+      <h2>Enter OTP</h2>
+      <div class="otp-container">
+        <input type="text" maxlength="1" autofocus required>
+        <input type="text" maxlength="1" required>
+        <input type="text" maxlength="1" required>
+        <input type="text" maxlength="1" required>
+        <input type="text" maxlength="1" required>
+      </div>
+      <div class="btn">
+                <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="./scripts/otp.js"></script>
+</body>
+</html>
+
+</body>
+</html>

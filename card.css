@@ -1,0 +1,286 @@
+
+
+
+.edit{
+          text-align: right;
+          font-size: 1rem;
+          padding: 0 1rem;
+          cursor: pointer;
+}
+.main-profile{
+          padding: 1rem ;
+}
+.client-profile{
+          /* border: 2px solid grey; */
+          /* padding: 10px; */
+          display: flex;
+          justify-content: space-evenly;
+}
+.client-profile-left{
+          border: 2px solid grey;
+          border-radius: .25rem;
+          padding: 5px;
+          width: 50%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background: #f6f6f6;
+          color: grey;
+          margin: .5rem;
+}
+.client-profile-right{
+        
+          margin:.5rem;
+          border: 2px solid grey;
+          border-radius: .25rem;
+          width: 50%;
+          background:  #f6f6f6;
+          color: grey;
+}
+.client-img{
+          background-color: grey;
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+}
+.client-details{
+          font-size: .8rem;
+}
+.client-details h4{
+          margin: .5rem 0;
+}
+.client-details span{
+          color: #1ee494;
+}
+.card-client-personal{
+          width: 100%;
+          
+}
+.card-client-personal li{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          font-size: .8rem;
+          padding: .5rem;
+          margin: 0;
+          font-weight: 600;
+}
+.text{
+          width: 70%;
+
+}
+.text span{
+          margin: 0 .3rem;
+          font-size: .9rem;
+          color: #1ee494;
+          /* border: 2px solid red; */
+}
+.text button{
+  padding: .5rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: .25rem;
+}
+.text button:hover{
+  background: rgb(22, 22, 120);
+  color: white;
+}
+.client-profile-left .card-client-personal .text{
+          width: 60%;
+}
+.header-title{
+          text-align: center;
+          font-size: 1rem;
+          /* margin: 1rem 0; */
+          
+}
+
+/* modals */
+
+.profile{
+          display: none;
+          position: fixed;
+          z-index: 5;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.4);
+}
+.profile-content-box{
+  background: rgb(22, 22, 120);
+  margin: auto;
+          padding: 20px;
+          /* border: 1px solid #888; */
+          width: 60%;
+          color: white;
+}
+.profile-content{
+  background-color: white;
+  color: black;
+  border: none;
+}
+label {
+  display: block;
+}
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  
+}
+.close {
+          color: white;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        .kyc-content{
+          background-color: white;
+          color: black;
+        }
+        .bank-content{
+          background-color: white;
+          color: black;
+        }
+/* modals */
+/* Loan Modals */
+.Loan-create {
+          width: 40%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: rgb(22, 22, 120);
+          border-radius: 5px;
+          color: white;
+        }
+        
+     .Loan-create   h2 {
+          text-align: center;
+          font-size: 1rem;
+        }
+        
+        .receipt {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          padding: 10px;
+          margin: .5rem 0;
+        }
+        
+        .header {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        
+        .header h3{
+          margin: .7rem 0;
+          font-size: 1rem;
+        }
+        .content {
+          margin-bottom: 20px;
+        }
+        
+        .footer {
+          text-align: center;
+          padding: .5rem;
+        }
+        .p-button{
+          padding: .5rem 1rem;
+          margin: .5rem;
+          cursor: pointer;
+          border: none;
+          font-size: .9rem;
+          font-weight: bold;
+          border-radius: .2rem;
+          color: white;
+        }
+        .footer textarea{
+          outline: none;
+          margin: .5rem;
+        }
+        #approve{
+          display: none;
+        }
+    .receipt-content    p {
+          margin: 5px 0;
+          font-size: 1rem;
+          /* border: 2px solid red; */
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        strong {
+          font-weight: bold;
+        }
+        
+
+/* create loan modal */
+
+
+.container {
+          width: 40%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: rgb(22, 22, 120);
+          border: 1px solid #ddd;
+          border-radius: 5px;
+        }
+        
+        h2 {
+          text-align: center;
+        }
+        
+        .form-group {
+          margin-bottom: 10px;
+        }
+        
+        label {
+          display: block;
+        }
+        
+        input[type="text"],
+       select
+        {
+          width: 100%;
+          padding: 5px;
+          border: 1px solid #ddd;
+          border-radius: 3px;
+        }
+        
+        input[type="submit"] {
+          width: 100%;
+          padding: 8px;
+          background: black;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+          background-color: rgb(22, 22, 120);
+          color: white;
+        }
+        
+
+
+
+
+
+
+
+
+
+

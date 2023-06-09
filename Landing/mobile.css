@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1000px){
+          *{
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                    font-family: 'Work Sans', sans-serif;
+                }
+                body{
+                    padding: 0;
+                    margin: 0;
+                    overflow: hidden;
+          }
+          header{
+            border: 2px solid white;
+
+          }
+
+
+          .nav{
+            display: block;
+          }
+.nav i{
+  font-size: 2rem;
+}
+.logo{
+  border: 2px solid black;
+  width: 50%;
+}
+.content{
+          padding: 1rem;
+}
+.content h3{
+          font-size: 3rem;
+         
+}
+.reason-box{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding: 0;
+}
+.reason-left{
+       /* display: none; */
+
+       width: 30%;
+}
+.reason-right{
+          width: 100%;
+          padding: 2rem;
+}
+.reason-card-box{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+          padding: 0;
+          /* border: 2px solid blue; */
+          width: 100%;
+          padding-left: 0;
+}
+.reason-card{
+          width: 40%;
+          padding: 1rem;
+          word-wrap: break-word;
+          font-size: .9rem;
+          color:  white;
+          background-color:  rgb(22, 22, 120);
+          text-align: center;
+          border-radius: .5rem;
+          text-align: left;
+}
+.services {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 3rem 0;
+        }
+        
+        .services-card-box {
+          width: 85%;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+        
+        }
+        
+        .services-card {
+      
+          width: 80%; /* Update the width to 70% for responsive layout */
+          margin: .5rem 0;
+          padding: 2rem;
+         
+        }
+.calculator-box{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+}
+.loan-calculator {
+          width: 85%;
+          }
+          .about-box{
+                    justify-content: center;
+          }
+          .about-left{
+                    display: none;
+          }
+          .about-right{
+                    width: 90%;
+                    text-align: center;
+          }
+       
+          .contact-box{
+                   flex-direction: column-reverse;
+          }
+
+
+
+}
+
+@media only screen and (max-width: 500px){
+  
+  .services-card-box {
+    width: 85%;
+    padding: .5rem;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .services-card {
+
+    width: 90%; /* Update the width to 70% for responsive layout */
+    margin: .5rem 0;
+    padding: 2rem;
+   
+  }
+
+  .nav{
+    border: 2px solid red;
+    padding: .5rem;
+    margin: -8rem;
+  }
+  .reason-right{
+    width: 100%;
+    padding: .5rem;
+  }
+.reason-card-box{
+  display: 
+  flex;
+  flex-direction: column;
+  width: 100%;
+}
+.reason-card{
+  width: 100%;
+  margin: .5rem 0;
+}
+
+
+
+            
+}
