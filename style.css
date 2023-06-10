@@ -12,7 +12,9 @@ body {
 
   font-family: 'lato', 'Roboto', sans-serif;
   background-size: cover;
-  background-color: var(--body);
+  background: linear-gradient(to top,white, #ecf0f1);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 62.5%;
 }
 
@@ -66,18 +68,21 @@ header {
 }
 
 .welcome p {
-  font-size: 1.2rem;
+  font-size: clamp(1.6rem,2vw,2.4rem);
   color: #2c3e50;
 }
 
 .id p {
-  font-size: .7rem;
+  /* border: 2px solid red; */
+  display: inline-block;
+  text-align: center;
+  font-size: clamp(1.6rem,2vw,1.25rem);
   color: #2c3e50;
 }
 
 .image {
-  height: 50px;
-  width: 50px;
+  height: clamp(1.5rem,5vw,3.8rem);
+  width: clamp(1.5rem,5vw,3.8rem);
   border-radius: 50%;
   background-color: grey;
 }
@@ -97,14 +102,12 @@ header {
 }
 
 nav {
-  background: white;
+  background: linear-gradient(to top,white, #ecf0f1);
   width: 7%;
-  
-
 }
 
 nav ul {
-  background: white;
+  background: linear-gradient(to top,white, #ecf0f1);
   position: fixed;
   height: 100%;
   width: fit-content;
@@ -115,6 +118,7 @@ nav ul {
 ul li {
   list-style: none;
   padding: 10px;
+  color: #2ecc71;
   border: 2px solid #616060;
   /* background-color: rgb(168, 167, 167); */
   border-radius: .25rem;

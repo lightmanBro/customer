@@ -16,7 +16,7 @@ const profile = {
     Employment: document.querySelector("#summary li .employment"),
   },
 
-  //Bank Details
+  //Bank Details value
   bank: {
     name: document.querySelector("#bank li .bankName"),
     acccountNumber: document.querySelector("#bank li .accountNumber"),
@@ -32,7 +32,7 @@ const profile = {
     idNumber:document.querySelector('#KYC li .idNumber'),
     satus:document.querySelector('#KYC li .status')
   },
-  //Guarantor One
+  //Guarantor One innerHtml
   guarantorOne:{
     name:document.querySelector('#guarantor_one li #guarantor_one_name'),
     phone:document.querySelector('#guarantor_one li #guarantor_one_phone'),
@@ -43,7 +43,7 @@ const profile = {
     work:document.querySelector('#guarantor_one li #guarantor_one_work')
 
   },
-  //Guarantir two
+  //Guarantir two innerHtml
   guarantorTwo:{
     name:document.querySelector('#guarantor_two li #guarantor_two_name'),
     phone:document.querySelector('#guarantor_two li #guarantor_two_phone'),
