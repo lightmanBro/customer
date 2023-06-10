@@ -16,67 +16,69 @@
 <style>
 
 </style>
+
 <body>
 
-    <main>
-      <header>
-        <div class="logo">
+  <main>
+    <header>
+      <div class="logo">
 
+      </div>
+      <div class="welcome">
+        <p>Welcome <span>Adedoyin Samuel</span></p>
+      </div>
+      <div class="info">
+        <div class="image">
+          <img src="" alt="">
         </div>
-        <div class="welcome">
-          <p>Welcome <span>Adedoyin Samuel</span></p>
+        <div class="id">
+          <p> ID: 100349287</p>
         </div>
-        <div class="info">
-          <div class="image">
-            <img src="" alt="">
-          </div>
-          <div class="id">
-            <p> ID: 100349287</p>
-          </div>
-        </div>
-      </header>
-      <section class="body-content">
+      </div>
+    </header>
+    <section class="body-content">
 
-        <div class="navs" id="overlay">
-          <nav id="popupContainer">       
-               <ul>
+      <div class="navs" id="overlay">
+        <nav id="popupContainer">
+          <ul>
             <li id="closePopup" style="font-size: 2rem;padding: .3rem; border: none;">&times;</li>
 
             <li class=""><a href="index.html">
-              <i class="fa-solid fa-house"></i><span>HOME</span>
-            </a>
+                <i class="fa-solid fa-house"></i><span>HOME</span>
+              </a>
             </li>
             <li class=""><a href="Loans.html">
-              <i class="fa-solid fa-landmark"></i><span>LOANS</span>
-            </a>
+                <i class="fa-solid fa-landmark"></i><span>LOANS</span>
+              </a>
             </li>
-           
-          
- <li class="active1"><a href="Profile.html">
-              <i class="fa-solid fa-user"></i><span>PROFILE</span>
-            </a>
+
+
+            <li class="active1"><a href="Profile.html">
+                <i class="fa-solid fa-user"></i><span>PROFILE</span>
+              </a>
             </li>
             <!-- <li onclick="toggleTable(3)">
               <i class="fa-solid fa-lock"></i></i><span>PASSWORD</span>
             </li> -->
             <li class=""><a href="./Landing/login.html">
-              <i class="fa-solid fa-power-off"></i><span>LOGOUT</span>
-            </a>
+                <i class="fa-solid fa-power-off"></i><span>LOGOUT</span>
+              </a>
             </li>
           </ul>
         </nav>
       </div>
 
-        <div class="box-card">
+      <div class="box-card">
 
-       
-       <!--/ All customers -->
 
-          <!-- Main Profile -->
-          <div class="main-profile table-content">
-            <div class="nav" id="openPopup">
-              <i  class="fa-sharp fa-solid fa-bars"></i>
-            </div>
+        <!--/ All customers -->
+
+        <!-- Main Profile -->
+        <div class="main-profile table-content">
+          <div class="nav" id="openPopup">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </div>
+
           <!-- client profile -->
           <div class="client-profile ">
             <div class="client-profile-left">
@@ -92,49 +94,49 @@
                 <h4>Next Payment: 20,000</h4>
                 <h4>Payment Date: 25-09-2023</h4>
                 <h4>Loan Status: <span>Active</span> </h4>
-                
+
               </div>
             </div>
 
             <div class="client-profile-right">
-              <div class="card-client-personal">
+              <div class="card-client-personal" id="summary">
                 <div class="header-title">
                   <div class="edit">
                     <i onclick="showModal()" class="fa-regular fa-pen-to-square"></i>
                   </div>
                   <h2 class="profileDetails">Profile Details 👩🏾👨🏾</h2>
-                                  </div>
+                </div>
                 <li>
                   <div class="title">Phone 📞</div>
-                          <div class="text">9876543210</div>
+                  <div class="text phone">9876543210</div>
                 </li>
                 <li>
                   <div class="title">Email: 📧
                   </div>
-                          <div class="text">
-                                    johndoe@example.com</div>
+                  <div class="text email">
+                    johndoe@example.com</div>
                 </li>
                 <li>
                   <div class="title">Birthday: 📅</div>
-                          <div class="text">24th July 1999</div>
+                  <div class="text birthday">24th July 1999</div>
                 </li>
                 <li>
                   <div class="title">Address: 📍</div>
-                          <div class="text">1861 Bayonne Ave, Manchester bass nusuhi</div>
+                  <div class="text address">1861 Bayonne Ave, Manchester bass nusuhi</div>
                 </li>
                 <li>
                   <div class="title">Gender: 🚹🚺</div>
-                          <div class="text">Male</div>
+                  <div class="text gender">Male</div>
                 </li>
                 <li>
                   <div class="title">Employment: 🧰</div>
-                          <div class="text">Civil Servant</div>
+                  <div class="text employment">Civil Servant</div>
                 </li>
                 <li>
                   <div class="title">Password:</div>
-                  <div class="text"><button onclick="showModalW()">Change</button></div>
+                  <div class="text password"><button onclick="showModalW()">Change</button></div>
                 </li>
-      </div>
+              </div>
             </div>
 
           </div>
@@ -143,80 +145,80 @@
           <!-- Bank And KYC Details -->
           <div class="client-profile">
             <div class="client-profile-left">
-              <div class="card-client-personal">
+              <div class="card-client-personal" id="bank">
                 <div class="edit">
                   <i onclick="showModal1()" class="fa-regular fa-pen-to-square"></i>
                 </div>
                 <div class="header-title">
                   <h2 class="bankDetails">Bank Details</h2>
                 </div>
-                
+
                 <li>
-                          <div class="title">Bank Name:</div>
-                          <div class="text">Polaris Bank</div>
+                  <div class="title">Bank Name:</div>
+                  <div class="text bankName">Polaris Bank</div>
                 </li>
                 <li>
-                          <div class="title">Account Number:
-                          </div>
-                          <div class="text">
-                                    2209876541</div>
+                  <div class="title">Account Number:
+                  </div>
+                  <div class="text accountNumber">
+                    2209876541</div>
                 </li>
                 <li>
-                          <div class="title">Account Name:</div>
-                          <div class="text">Adedoyin Samuel Kehinde</div>
+                  <div class="title">Account Name:</div>
+                  <div class="text accountName">Adedoyin Samuel Kehinde</div>
                 </li>
                 <li>
-                          <div class="title">BVN:</div>
-                          <div class="text">123456789009876</div>
+                  <div class="title">BVN:</div>
+                  <div class="text bvn">123456789009876</div>
                 </li>
                 <li>
-                          <div class="title">Bank Code:</div>
-                          <div class="text">235476</div>
+                  <div class="title">Bank Code:</div>
+                  <div class="text bankCode">235476</div>
                 </li>
                 <li>
-                          <div class="title">Account Type</div>
-                          <div class="text">Savings</div>
+                  <div class="title">Account Type</div>
+                  <div class="text accountType">Savings</div>
                 </li>
-      </div>
+              </div>
             </div>
 
             <div class="client-profile-right">
-              <div class="card-client-personal">
+              <div class="card-client-personal" id="KYC">
                 <div class="edit">
                   <i onclick="showModal2()" class="fa-regular fa-pen-to-square"></i>
                 </div>
                 <div class="header-title">
                   <h2 class="kyc-details">KYC Details</h2>
-                                  </div>
+                </div>
                 <li>
-                          <div class="title">Goverment ID</div>
-                          <div class="text">International Passport</div>
+                  <div class="title">Goverment ID</div>
+                  <div class="text idType">International Passport</div>
                 </li>
                 <li>
-                          <div class="title">ID Number:
-                          </div>
-                          <div class="text">
-                                    A57666E9B</div>
+                  <div class="title">ID Number:
+                  </div>
+                  <div class="text idNumber">
+                    A57666E9B</div>
                 </li>
                 <li>
-                          <div class="title">ID Upload:</div>
-                          <div class="text"><button>Preview</button><span>Success</span></div>
+                  <div class="title">ID Upload:</div>
+                  <div class="text"><button>Preview</button><span>Success</span></div>
                 </li>
                 <li>
                   <div class="title">Address:</div>
                   <div class="text"><button>Preview</button><span>Success</span></div>
                 </li>
                 <li>
-                          <div class="title">KYC status:</div>
-                          <div class="text"><span>Completed</span></div>
+                  <div class="title">KYC status:</div>
+                  <div class="text status"><span>Completed</span></div>
                 </li>
-              
-      </div>
+
+              </div>
             </div>
 
           </div>
 
-<!-- /Client profile -->
+          <!-- /Client profile -->
 
           <!-- Guarantor Details -->
           <div class="client-profile">
@@ -226,39 +228,39 @@
                   <i onclick="showModal3()" class="fa-regular fa-pen-to-square"></i>
                 </div>
                 <div class="header-title">
-<h2 class="guarantor-details">Guarantor Details 🤝</h2>
+                  <h2 class="guarantor-details">Guarantor Details 🤝</h2>
                 </div>
                 <li>
                   <div class="title">Name</div>
                   <div class="text">Adebayo Segun James</div>
-        </li>
+                </li>
                 <li>
                   <div class="title">Phone 📞</div>
                   <div class="text">9876543210</div>
-        </li>
-        <li>
+                </li>
+                <li>
                   <div class="title">Email: 📧
                   </div>
                   <div class="text">
-                            johndoe@example.com</div>
-        </li>
-        <li>
+                    johndoe@example.com</div>
+                </li>
+                <li>
                   <div class="title">Birthday: 📅</div>
                   <div class="text">24th July 1999</div>
-        </li>
-        <li>
+                </li>
+                <li>
                   <div class="title">Address: 📍</div>
                   <div class="text">1861 Bayonne Ave, Manchester bass nusuhi</div>
-        </li>
-        <li>
+                </li>
+                <li>
                   <div class="title">Gender: 🚹🚺</div>
                   <div class="text">Male</div>
-        </li>
-        <li>
+                </li>
+                <li>
                   <div class="title">Employment: 🧰</div>
                   <div class="text">Civil Servant</div>
-        </li>
-      </div>
+                </li>
+              </div>
             </div>
 
             <div class="client-profile-right">
@@ -272,76 +274,76 @@
                 <li>
                   <div class="title">Name</div>
                   <div class="text">Adebayo Segun James</div>
-        </li>
+                </li>
                 <li>
                   <div class="title">Phone 📞</div>
                   <div class="text">9876543210</div>
-        </li>
-        <li>
+                </li>
+                <li>
                   <div class="title">Email: 📧
                   </div>
                   <div class="text">
-                            johndoe@example.com</div>
-        </li>
-        <li>
+                    johndoe@example.com</div>
+                </li>
+                <li>
                   <div class="title">Birthday: 📅</div>
                   <div class="text">24th July 1999</div>
-        </li>
-        <li>
+                </li>
+                <li>
                   <div class="title">Address: 📍</div>
                   <div class="text">1861 Bayonne Ave, Manchester bass nusuhi</div>
-        </li>
-        <li>
+                </li>
+                <li>
                   <div class="title">Gender: 🚹🚺</div>
                   <div class="text">Male</div>
-        </li>
-        <li>
+                </li>
+                <li>
                   <div class="title">Employment: 🧰</div>
                   <div class="text">Civil Servant</div>
-        </li>
-      
-              
-      </div>
+                </li>
+
+
+              </div>
             </div>
 
           </div>
 
-</div>
-     <!--/ Main Profile -->
-<!-- Password-->
-<div class="password hide">
-  <div class="password-input">
-    <div class="password-content">
+        </div>
+        <!--/ Main Profile -->
+        <!-- Password-->
+        <div class="password hide">
+          <div class="password-input">
+            <div class="password-content">
 
-      <label for="">Old Password<br>
-        <input type="text">
-      </label>
-      <label for="">New Password<br>
-        <input type="text">
-      </label>
-      <label for="">Confirm Password <br>
-        <input type="text">
-      </label>
-    </div>
-      
-  </div>
-</div>
-<!-- /Password-->
-<!-- modal box -->
-<!-- client-profile modal -->
+              <label for="">Old Password<br>
+                <input type="text">
+              </label>
+              <label for="">New Password<br>
+                <input type="text">
+              </label>
+              <label for="">Confirm Password <br>
+                <input type="text">
+              </label>
+            </div>
 
-          <div class="profile " id="profile">
-            <div class="profile-content-box">
-<div class="exit">
-  <span class="close" onclick="closeModal()">&times;</span>
-</div>
-<div class="header-title">
-  <h2>Profile Details</h2>
-                  </div>
-              <div class="proile-image-head">
+          </div>
+        </div>
+        <!-- /Password-->
+        <!-- modal box -->
+        <!-- client-profile modal -->
 
-              
-              </div>
+        <div class="profile " id="profile">
+          <div class="profile-content-box">
+            <div class="exit">
+              <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="header-title">
+              <h2>Profile Details</h2>
+            </div>
+            <div class="proile-image-head">
+
+
+            </div>
             <div class="profile-content">
 
               <div class="profile-input">
@@ -352,20 +354,20 @@
                 <label for="">Last Name <br>
                   <input type="text">
                 </label>
-                
+
               </div>
-              
+
               <div class="profile-input">
                 <label for="">Email 📧<br>
                   <input type="text">
-                
+
                 </label>
                 <label for="">Phone Number 📞<br>
                   <input type="tel">
-                
+
                 </label>
               </div>
-              
+
               <div class="profile-input">
                 <label for="" style="width: 100%;">Address 📭<br>
                   <input type="text" style="width: 100%;">
@@ -375,34 +377,34 @@
               <div class="profile-input">
                 <label for="">Date Of Birth 📆<br>
                   <input type="date">
-                
+
                 </label>
                 <label for="">Company Of Employment 🧰<br>
                   <input type="text">
-                
+
                 </label>
               </div>
               <div class="profile-input">
                 <label for="">Employment Type 🧰| 🛠 |⛑<br>
                   <input type="text">
-                
+
                 </label>
-                <label for="">Net Salary  💰<br>
+                <label for="">Net Salary 💰<br>
                   <input type="tel">
-                
+
                 </label>
               </div>
               <div class="profile-input">
                 <label for="">Job Position 1️⃣-🔟<br>
                   <input type="text">
-                
+
                 </label>
-                <label for="">Gender  🚹 | 🚺<br>
+                <label for="">Gender 🚹 | 🚺<br>
                   <select name="" id="">
                     <option value="MALE">MALE</option>
                     <option value="FEMALE">FEMALE</option>
                   </select>
-                
+
                 </label>
               </div>
             </div>
@@ -411,293 +413,293 @@
             </div>
           </div>
 
-          </div>
-<!-- /client-profile modal -->
-<!-- client change password modal -->
-
-<div class="profile" id="password">
-  <div class="profile-content-box">
-    <div class="exit">
-      <span class="close" onclick="closeModalW()">&times;</span>
-    </div>
-    <div class="header-title">
-      <h2>Change Password</h2>
-                      </div>
-    <div class="password-input">
-      <div class="password-content">
-  
-        <label for="">Old Password<br>
-          <input type="text">
-        </label>
-        <label for="">New Password<br>
-          <input type="text">
-        </label>
-        <label for="">Confirm Password <br>
-          <input type="text">
-        </label>
-      </div>
-        
-    </div>
-                            <div class="form-group">
-                              <input type="submit" value="Submit">
-                            </div>
         </div>
-        </div>
+        <!-- /client-profile modal -->
+        <!-- client change password modal -->
 
-
-
-
-
-<!-- client-bank modal -->
-<div class="profile" id="bank">
-  <div class="profile-content-box">
-
-          <div class="profile-bank ">
+        <div class="profile" id="password">
+          <div class="profile-content-box">
             <div class="exit">
-              <span class="close" onclick="closeModal1()">&times;</span>
+              <span class="close" onclick="closeModalW()">&times;</span>
             </div>
             <div class="header-title">
-              <h2>Bank Details</h2>
-                              </div>
-                              <div class="bank-content">
-
-                                <div class="bank-input">
-                              <label for="">Bank Name <br>
-                                <input type="text">
-                    
-                              </label>
-                              <label for="">Account Name <br>
-                                <input type="text">
-                    
-                              </label>
-                                </div>
-                                <div class="bank-input">
-                              <label for="">Account Number <br>
-                                <input type="text">
-                    
-                              </label>
-                              <label for="">BVN <br>
-                                <input type="text">
-                    
-                              </label>
-                                </div>
-                                <div class="bank-input">
-                              <label for="">Bank Code <br>
-                                <input type="text">
-                    
-                              </label>
-                              <label for="">Account Type <br>
-                                <select name="" id="">
-                                  <option value="SAVINGS">SAVINGS</option>
-                                  <option value="CURRENT">CURRENT</option>
-                                </select>
-                    
-                              </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <input type="submit" value="Submit">
-                            </div>
-        </div>
-        </div>
-<!-- /client-bank modal -->
-<!-- client-kyc modal -->
-<div class="profile" id="kyc">
-  <div class="profile-content-box">
-          <div class="kyc " style="margin-bottom: 1rem;">
-            <div class="exit">
-              <span class="close" onclick="closeModal2()">&times;</span>
+              <h2>Change Password</h2>
             </div>
-            <div class="header-title">
-              <h2>KYC Details</h2>
-                              </div>
-                              <div class="kyc-content">
+            <div class="password-input">
+              <div class="password-content">
 
-                                <div class="kyc-input">
-                                  <label for="">Goverment ID <br>
-                                    <input type="text">
-                                  </label>
-                                  <label for="">ID Number <br>
-                                    <input type="text">
-                                  </label>
-                                </div>
-                                <div class="kyc-input">
-                                  <label for="">Upload ID <br>
-                                    <input type="file" style="background-color: grey; cursor: pointer;">
-                                  </label>
-                                  <label for="">Address Proof <br>
-                                    <input type="file" style="background-color: grey; cursor: pointer;">
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <input type="submit" value="Submit">
-                            </div>
+                <label for="">Old Password<br>
+                  <input type="text">
+                </label>
+                <label for="">New Password<br>
+                  <input type="text">
+                </label>
+                <label for="">Confirm Password <br>
+                  <input type="text">
+                </label>
+              </div>
+
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit">
             </div>
           </div>
-<!-- /client-kyc modal -->
-<!-- client-guarantor modal -->
-<div class="profile" id="guarantor">
-  <div class="profile-content-box">
-    <div class="guarantor">
-      <div class="exit">
-        <span class="close" onclick="closeModal3()">&times;</span>
-      </div>
-      <div class="header-title">
-        <h2>Guarantor Details</h2>
-                        </div>
-   
-    <div class="profile-content">
-      <div class="profile-input">
-        <label for="">First Name <br>
-          <input type="text">
-    
-        </label> <br> <br>
-        <label for="">Last Name <br>
-          <input type="text">
-        </label>
-        
-      </div>
-      
-      <div class="profile-input">
-        <label for="">Email 📧<br>
-          <input type="text">
-        
-        </label>
-        <label for="">Phone Number 📞<br>
-          <input type="tel">
-        
-        </label>
-      </div>
-      
-      <div class="profile-input">
-        <label for="" style="width: 100%;">Address 📍<br>
-          <input type="text" style="width: 100%;">
-    
-        </label>
-      </div>
-      <div class="profile-input">
-        <label for="">Date Of Birth 📅<br>
-          <input type="date">
-        
-        </label>
-          <label for="">Gender  🚹🚺<br>
-                      <select name="" id="">
-                        <option value="MALE">MALE</option>
-                        <option value="FEMALE">FEMALE</option>
-                      </select>
-                    
-                    </label>
-       
-      </div>
-      <div class="profile-input">
-        <label for="">Employment Type 🧰| 🛠 |⛑<br>
-          <input type="text">
-        
-        </label>
-        <label for="">Net Salary  💰<br>
-          <input type="tel">
-        
-        </label>
-      </div>
-    </div>
-    <div class="form-group">
-      <input type="submit" value="Submit">
-    </div>
-    </div>
-</div>
-</div>
+        </div>
 
 
 
-<!-- /client-guarantor modal -->
 
 
-<!-- Loan modal -->
-<div class="profile"  id="loan1">
+        <!-- client-bank modal -->
+        <div class="profile" id="bank">
+          <div class="profile-content-box">
 
-  <div class="container" id="loan-receipt">
-    <div class="exit">
-      <span class="close" onclick="closeModalC()">&times;</span>
-    </div>
-    <h2>Loan Receipt</h2>
-    <div class="receipt">
-      
-      <div class="header">
-        <h3>QUICKFUNDS</h3>
-        <hr>
-        <p>Date: <span id="date"></span></p>
-      </div>
-      <div class="receipt-content">
-        <p><strong>Name:</strong><span>Adedoyin Samuel</span> </p>
-        <p><strong>Loan Amount:</strong><span>10,000</span> </p>
-        <p><strong>Interest Rate:</strong><span>5%</span> </p>
-        <p><strong>Total:</strong><span>15,000</span> </p>
-        <p><strong>Loan Date:</strong><span>25-09-2023</span> </p>
-        <p><strong>Loan Duration:</strong><span>12 months</span> </p>
-        <p><strong>Due Date:</strong><span>25-09-2023</span> </p>
-        <p><strong>Monthly Payment</strong><span>1,250</span> </p>
-        <p><strong>Loan Status:</strong><span>Completed</span> </p>
-        
-      </div>
-      
-      <div class="footer">
-        <p>Thank you for using QUICKFUNDS!</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- create loan modal -->
-<div class="profile" id="loan">
+            <div class="profile-bank ">
+              <div class="exit">
+                <span class="close" onclick="closeModal1()">&times;</span>
+              </div>
+              <div class="header-title">
+                <h2>Bank Details</h2>
+              </div>
+              <div class="bank-content">
 
-  <div class="Loan-create">
-    <div class="exit">
-      <span class="close" onclick="closeModalL()">&times;</span>
-    </div>
-    <h2>Create New Loan</h2>
-    <form >
-      <div class="form-group">
-        <label for="borrowerName">Category:</label>
-       <select name="" id="">
-        <option value="Personal">Personal Loan</option>
-        <option value="House">House Loan</option>
-        <option value="Business">Business Loan</option>
-        <option value="Education">Education Loan</option>
-       </select>
-      </div>
-      <div class="form-group">
-        <label for="borrowerName">Name:</label>
-        <input type="text" id="" value="Adedoyin Samuel" disabled required>
-      </div>
-      <div class="form-group">
-        <label for="loanAmount">Loan Amount:</label>
-        <input type="text" id="" required>
-      </div>
-      <div class="form-group">
-        <label for="interestRate">Interest Rate:</label>
-        <input type="text" id="" step="0.01" disabled required>
-      </div>
-      <div class="form-group">
-        <label for="loanDuration">Loan Duration (months):</label>
-        <input type="text" id="" required>
-      </div>
-      <div class="form-group">
-        <label for="loanDuration">Total:</label>
-        <input type="text" id="" required disabled>
-      </div>
-      <div class="form-group">
-        <label for="loanDuration">Payments (Monthly):</label>
-        <input type="text" id="" required disabled>
-      </div>
-    
-      <div class="form-group">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
-  </div>
-</div>
+                <div class="bank-input">
+                  <label for="">Bank Name <br>
+                    <input type="text">
+
+                  </label>
+                  <label for="">Account Name <br>
+                    <input type="text">
+
+                  </label>
+                </div>
+                <div class="bank-input">
+                  <label for="">Account Number <br>
+                    <input type="text">
+
+                  </label>
+                  <label for="">BVN <br>
+                    <input type="text">
+
+                  </label>
+                </div>
+                <div class="bank-input">
+                  <label for="">Bank Code <br>
+                    <input type="text">
+
+                  </label>
+                  <label for="">Account Type <br>
+                    <select name="" id="">
+                      <option value="SAVINGS">SAVINGS</option>
+                      <option value="CURRENT">CURRENT</option>
+                    </select>
+
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit">
+            </div>
+          </div>
+        </div>
+        <!-- /client-bank modal -->
+        <!-- client-kyc modal -->
+        <div class="profile" id="kyc">
+          <div class="profile-content-box">
+            <div class="kyc " style="margin-bottom: 1rem;">
+              <div class="exit">
+                <span class="close" onclick="closeModal2()">&times;</span>
+              </div>
+              <div class="header-title">
+                <h2>KYC Details</h2>
+              </div>
+              <div class="kyc-content">
+
+                <div class="kyc-input">
+                  <label for="">Goverment ID <br>
+                    <input type="text">
+                  </label>
+                  <label for="">ID Number <br>
+                    <input type="text">
+                  </label>
+                </div>
+                <div class="kyc-input">
+                  <label for="">Upload ID <br>
+                    <input type="file" style="background-color: grey; cursor: pointer;">
+                  </label>
+                  <label for="">Address Proof <br>
+                    <input type="file" style="background-color: grey; cursor: pointer;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit">
+            </div>
+          </div>
+        </div>
+        <!-- /client-kyc modal -->
+        <!-- client-guarantor modal -->
+        <div class="profile" id="guarantor">
+          <div class="profile-content-box">
+            <div class="guarantor">
+              <div class="exit">
+                <span class="close" onclick="closeModal3()">&times;</span>
+              </div>
+              <div class="header-title">
+                <h2>Guarantor Details</h2>
+              </div>
+
+              <div class="profile-content">
+                <div class="profile-input">
+                  <label for="">First Name <br>
+                    <input type="text">
+
+                  </label> <br> <br>
+                  <label for="">Last Name <br>
+                    <input type="text">
+                  </label>
+
+                </div>
+
+                <div class="profile-input">
+                  <label for="">Email 📧<br>
+                    <input type="text">
+
+                  </label>
+                  <label for="">Phone Number 📞<br>
+                    <input type="tel">
+
+                  </label>
+                </div>
+
+                <div class="profile-input">
+                  <label for="" style="width: 100%;">Address 📍<br>
+                    <input type="text" style="width: 100%;">
+
+                  </label>
+                </div>
+                <div class="profile-input">
+                  <label for="">Date Of Birth 📅<br>
+                    <input type="date">
+
+                  </label>
+                  <label for="">Gender 🚹🚺<br>
+                    <select name="" id="">
+                      <option value="MALE">MALE</option>
+                      <option value="FEMALE">FEMALE</option>
+                    </select>
+
+                  </label>
+
+                </div>
+                <div class="profile-input">
+                  <label for="">Employment Type 🧰| 🛠 |⛑<br>
+                    <input type="text">
+
+                  </label>
+                  <label for="">Net Salary 💰<br>
+                    <input type="tel">
+
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Submit">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- /client-guarantor modal -->
+
+
+        <!-- Loan modal -->
+        <div class="profile" id="loan1">
+
+          <div class="container" id="loan-receipt">
+            <div class="exit">
+              <span class="close" onclick="closeModalC()">&times;</span>
+            </div>
+            <h2>Loan Receipt</h2>
+            <div class="receipt">
+
+              <div class="header">
+                <h3>QUICKFUNDS</h3>
+                <hr>
+                <p>Date: <span id="date"></span></p>
+              </div>
+              <div class="receipt-content">
+                <p><strong>Name:</strong><span>Adedoyin Samuel</span> </p>
+                <p><strong>Loan Amount:</strong><span>10,000</span> </p>
+                <p><strong>Interest Rate:</strong><span>5%</span> </p>
+                <p><strong>Total:</strong><span>15,000</span> </p>
+                <p><strong>Loan Date:</strong><span>25-09-2023</span> </p>
+                <p><strong>Loan Duration:</strong><span>12 months</span> </p>
+                <p><strong>Due Date:</strong><span>25-09-2023</span> </p>
+                <p><strong>Monthly Payment</strong><span>1,250</span> </p>
+                <p><strong>Loan Status:</strong><span>Completed</span> </p>
+
+              </div>
+
+              <div class="footer">
+                <p>Thank you for using QUICKFUNDS!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- create loan modal -->
+        <div class="profile" id="loan">
+
+          <div class="Loan-create">
+            <div class="exit">
+              <span class="close" onclick="closeModalL()">&times;</span>
+            </div>
+            <h2>Create New Loan</h2>
+            <form>
+              <div class="form-group">
+                <label for="borrowerName">Category:</label>
+                <select name="" id="">
+                  <option value="Personal">Personal Loan</option>
+                  <option value="House">House Loan</option>
+                  <option value="Business">Business Loan</option>
+                  <option value="Education">Education Loan</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="borrowerName">Name:</label>
+                <input type="text" id="" value="Adedoyin Samuel" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="interestRate">Interest Rate:</label>
+                <input type="text" id="" step="0.01" disabled required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Loan Duration (months):</label>
+                <input type="text" id="" required>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Total:</label>
+                <input type="text" id="" required disabled>
+              </div>
+              <div class="form-group">
+                <label for="loanDuration">Payments (Monthly):</label>
+                <input type="text" id="" required disabled>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
         <!-- create personal loan -->
 
         <div class="profile" id="personal-loan">
@@ -707,7 +709,7 @@
               <span class="close" onclick="closeModalP()">&times;</span>
             </div>
             <h2>Create New Loan</h2>
-            <form >
+            <form>
               <div class="form-group">
                 <label for="borrowerName">Category:</label>
                 <input type="text" id="" value="Personal Loan" disabled required>
@@ -736,7 +738,7 @@
                 <label for="loanDuration">Payments (Monthly):</label>
                 <input type="text" id="" required disabled>
               </div>
-            
+
               <div class="form-group">
                 <input type="submit" value="Submit">
               </div>
@@ -752,7 +754,7 @@
               <span class="close" onclick="closeModalH()">&times;</span>
             </div>
             <h2>Create New Loan</h2>
-            <form >
+            <form>
               <div class="form-group">
                 <label for="borrowerName">Category:</label>
                 <input type="text" id="" value="House Loan" disabled required>
@@ -781,7 +783,7 @@
                 <label for="loanDuration">Payments (Monthly):</label>
                 <input type="text" id="" required disabled>
               </div>
-            
+
               <div class="form-group">
                 <input type="submit" value="Submit">
               </div>
@@ -797,7 +799,7 @@
               <span class="close" onclick="closeModalB()">&times;</span>
             </div>
             <h2>Create New Loan</h2>
-            <form >
+            <form>
               <div class="form-group">
                 <label for="borrowerName">Category:</label>
                 <input type="text" id="" value="Business Loan" disabled required>
@@ -826,7 +828,7 @@
                 <label for="loanDuration">Payments (Monthly):</label>
                 <input type="text" id="" required disabled>
               </div>
-            
+
               <div class="form-group">
                 <input type="submit" value="Submit">
               </div>
@@ -842,7 +844,7 @@
               <span class="close" onclick="closeModalE()">&times;</span>
             </div>
             <h2>Create New Loan</h2>
-            <form >
+            <form>
               <div class="form-group">
                 <label for="borrowerName">Category:</label>
                 <input type="text" id="" value="Education Loan" disabled required>
@@ -871,7 +873,7 @@
                 <label for="loanDuration">Payments (Monthly):</label>
                 <input type="text" id="" required disabled>
               </div>
-            
+
               <div class="form-group">
                 <input type="submit" value="Submit">
               </div>
@@ -883,12 +885,13 @@
 
 
 
-        </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
   <script src="./scripts/script.js"></script>
+  <script src="./scripts/profile.js"></script>
 </body>
 
 </html>

@@ -15,28 +15,28 @@
 // code to toggle the table //
 
 window.addEventListener('load', function() {
-    var tableContent = document.getElementsByClassName('home');
-    var tableHeaders = document.getElementsByClassName('button');
-    tableContent[0].classList.add('show');
-    tableHeaders[0].classList.add('active1');
-    
-    for (var i = 0; i < tableHeaders.length; i++) {
-      tableHeaders[i].addEventListener('click', function() {
-        var colIndex = Array.prototype.indexOf.call(tableHeaders, this);
-        for (var j = 0; j < tableContent.length; j++) {
-          if (j !== colIndex) {
-            tableContent[j].classList.remove('show');
-          }
-        }
-        for (var j = 0; j < tableHeaders.length; j++) {
-          if (j !== colIndex) {
-            tableHeaders[j].classList.remove('active1');
-          }
-        }
-        tableContent[colIndex].classList.toggle('show');
-        tableHeaders[colIndex].classList.add('active1');
-      });
-    }
+    // var tableContent = document.getElementsByClassName('home');
+    // var tableHeaders = document.getElementsByClassName('button');
+    // tableContent[0].classList.add('show');
+    // tableHeaders[0].classList.add('active1');
+    // console.log(tableContent);
+    // for (var i = 0; i < tableHeaders.length; i++) {
+    //   tableHeaders[i].addEventListener('click', function() {
+    //     var colIndex = Array.prototype.indexOf.call(tableHeaders, this);
+    //     for (var j = 0; j < tableContent.length; j++) {
+    //       if (j !== colIndex) {
+    //         tableContent[j].classList.remove('show');
+    //       }
+    //     }
+    //     for (var j = 0; j < tableHeaders.length; j++) {
+    //       if (j !== colIndex) {
+    //         tableHeaders[j].classList.remove('active1');
+    //       }
+    //     }
+    //     tableContent[colIndex].classList.toggle('show');
+    //     tableHeaders[colIndex].classList.add('active1');
+    //   });
+    // }
   });
   
   
