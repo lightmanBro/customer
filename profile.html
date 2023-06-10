@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <link rel="stylesheet" href="fontsawesome/css/all.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="card.css">
-  <link rel="stylesheet" href="color.css">
-  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./card.css">
+  <link rel="stylesheet" href="./color.css">
+  <link rel="stylesheet" href="./mobile.css">
   <title>Order-Page-Tamopei</title>
 </head>
 <style>
@@ -147,7 +147,7 @@
             <div class="client-profile-left">
               <div class="card-client-personal" id="bank">
                 <div class="edit">
-                  <i onclick="showModal1()" class="fa-regular fa-pen-to-square"></i>
+                  <i id="bankModal" class="fa-regular fa-pen-to-square"></i>
                 </div>
                 <div class="header-title">
                   <h2 class="bankDetails">Bank Details</h2>
@@ -223,7 +223,7 @@
           <!-- Guarantor Details -->
           <div class="client-profile">
             <div class="client-profile-left">
-              <div class="card-client-personal">
+              <div class="card-client-personal" id="guarantor_one">
                 <div class="edit">
                   <i onclick="showModal3()" class="fa-regular fa-pen-to-square"></i>
                 </div>
@@ -232,39 +232,39 @@
                 </div>
                 <li>
                   <div class="title">Name</div>
-                  <div class="text">Adebayo Segun James</div>
+                  <div class="text" id="guarantor_one_name">Adebayo Segun James</div>
                 </li>
                 <li>
                   <div class="title">Phone 📞</div>
-                  <div class="text">9876543210</div>
+                  <div class="text" id="guarantor_one_phone">9876543210</div>
                 </li>
                 <li>
                   <div class="title">Email: 📧
                   </div>
-                  <div class="text">
+                  <div class="text" id="guarantor_one_email">
                     johndoe@example.com</div>
                 </li>
                 <li>
                   <div class="title">Birthday: 📅</div>
-                  <div class="text">24th July 1999</div>
-                </li>
-                <li>
-                  <div class="title">Address: 📍</div>
-                  <div class="text">1861 Bayonne Ave, Manchester bass nusuhi</div>
+                  <div class="text" id="guarantor_one_birthday">24th July 1999</div>
                 </li>
                 <li>
                   <div class="title">Gender: 🚹🚺</div>
-                  <div class="text">Male</div>
+                  <div class="text" id="guarantor_one_gender">Male</div>
                 </li>
                 <li>
-                  <div class="title">Employment: 🧰</div>
-                  <div class="text">Civil Servant</div>
+                  <div class="title">Work: 🧰</div>
+                  <div class="text" id="guarantor_one_work">Civil Servant</div>
+                </li>
+                <li>
+                  <div class="title">Address: 📍</div>
+                  <div class="text" id="guarantor_one_address">1861 Bayonne Ave, Manchester bass nusuhi</div>
                 </li>
               </div>
             </div>
 
             <div class="client-profile-right">
-              <div class="card-client-personal">
+              <div class="card-client-personal" id="guarantor_two">
                 <div class="edit">
                   <i onclick="showModal3()" class="fa-regular fa-pen-to-square"></i>
                 </div>
@@ -273,36 +273,34 @@
                 </div>
                 <li>
                   <div class="title">Name</div>
-                  <div class="text">Adebayo Segun James</div>
+                  <div class="text" id="guarantor_two_name">Adebayo Segun James</div>
                 </li>
                 <li>
                   <div class="title">Phone 📞</div>
-                  <div class="text">9876543210</div>
+                  <div class="text" id="guarantor_two_phone">9876543210</div>
                 </li>
                 <li>
                   <div class="title">Email: 📧
                   </div>
-                  <div class="text">
+                  <div class="text" id="guarantor_two_email">
                     johndoe@example.com</div>
                 </li>
                 <li>
                   <div class="title">Birthday: 📅</div>
-                  <div class="text">24th July 1999</div>
-                </li>
-                <li>
-                  <div class="title">Address: 📍</div>
-                  <div class="text">1861 Bayonne Ave, Manchester bass nusuhi</div>
+                  <div class="text" id="guarantor_two_birthday">24th July 1999</div>
                 </li>
                 <li>
                   <div class="title">Gender: 🚹🚺</div>
-                  <div class="text">Male</div>
+                  <div class="text" id="guarantor_two_gender">Male</div>
                 </li>
                 <li>
-                  <div class="title">Employment: 🧰</div>
-                  <div class="text">Civil Servant</div>
+                  <div class="title">Work: 🧰</div>
+                  <div class="text" id="guarantor_two_work">Civil Servant</div>
                 </li>
-
-
+                <li>
+                  <div class="title">Address: 📍</div>
+                  <div class="text" id="guarantor_two_address">1861 Bayonne Ave, Manchester bass nusuhi</div>
+                </li>
               </div>
             </div>
 
@@ -315,11 +313,11 @@
           <div class="password-input">
             <div class="password-content">
 
-              <label for="">Old Password<br>
-                <input type="text">
+              <label for="old_password">Old Password<br>
+                <input type="text" name="old_password">
               </label>
-              <label for="">New Password<br>
-                <input type="text">
+              <label for="new_password">New Password<br>
+                <input type="text" id="new_password" name="new_password">
               </label>
               <label for="">Confirm Password <br>
                 <input type="text">
@@ -341,76 +339,78 @@
               <h2>Profile Details</h2>
             </div>
             <div class="proile-image-head">
-
-
             </div>
             <div class="profile-content">
+            <form id="user_profile">
 
-              <div class="profile-input">
-                <label for="">First Name <br>
-                  <input type="text">
 
-                </label> <br> <br>
-                <label for="">Last Name <br>
-                  <input type="text">
-                </label>
+                <div class="profile-input">
+                  <label for="">First Name <br>
+                    <input type="text">
 
+                  </label> <br> <br>
+                  <label for="">Last Name <br>
+                    <input type="text">
+                  </label>
+
+                </div>
+
+                <div class="profile-input">
+                  <label for="">Email 📧<br>
+                    <input type="text">
+
+                  </label>
+                  <label for="">Phone Number 📞<br>
+                    <input type="tel">
+
+                  </label>
+                </div>
+
+                <div class="profile-input">
+                  <label for="" style="width: 100%;">Address 📭<br>
+                    <input type="text" style="width: 100%;">
+
+                  </label>
+                </div>
+                <div class="profile-input">
+                  <label for="">Date Of Birth 📆<br>
+                    <input type="date">
+
+                  </label>
+                  <label for="">Company Of Employment 🧰<br>
+                    <input type="text">
+
+                  </label>
+                </div>
+                <div class="profile-input">
+                  <label for="">Employment Type 🧰| 🛠 |⛑<br>
+                    <input type="text">
+
+                  </label>
+                  <label for="">Net Salary 💰<br>
+                    <input type="tel">
+
+                  </label>
+                </div>
+                <div class="profile-input">
+                  <label for="">Job Position 1️⃣-🔟<br>
+                    <input type="text">
+
+                  </label>
+                  <label for="">Gender 🚹 | 🚺<br>
+                    <select name="" id="">
+                      <option value="MALE">MALE</option>
+                      <option value="FEMALE">FEMALE</option>
+                    </select>
+
+                  </label>
+                </div>
               </div>
-
-              <div class="profile-input">
-                <label for="">Email 📧<br>
-                  <input type="text">
-
-                </label>
-                <label for="">Phone Number 📞<br>
-                  <input type="tel">
-
-                </label>
+              <div class="form-group">
+                <input type="submit" value="Submit">
               </div>
-
-              <div class="profile-input">
-                <label for="" style="width: 100%;">Address 📭<br>
-                  <input type="text" style="width: 100%;">
-
-                </label>
-              </div>
-              <div class="profile-input">
-                <label for="">Date Of Birth 📆<br>
-                  <input type="date">
-
-                </label>
-                <label for="">Company Of Employment 🧰<br>
-                  <input type="text">
-
-                </label>
-              </div>
-              <div class="profile-input">
-                <label for="">Employment Type 🧰| 🛠 |⛑<br>
-                  <input type="text">
-
-                </label>
-                <label for="">Net Salary 💰<br>
-                  <input type="tel">
-
-                </label>
-              </div>
-              <div class="profile-input">
-                <label for="">Job Position 1️⃣-🔟<br>
-                  <input type="text">
-
-                </label>
-                <label for="">Gender 🚹 | 🚺<br>
-                  <select name="" id="">
-                    <option value="MALE">MALE</option>
-                    <option value="FEMALE">FEMALE</option>
-                  </select>
-
-                </label>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="submit" value="Submit">
-            </div>
+          </form>
+          
           </div>
 
         </div>
@@ -456,48 +456,53 @@
 
             <div class="profile-bank ">
               <div class="exit">
-                <span class="close" onclick="closeModal1()">&times;</span>
+                <span class="bankModalClose" onclick="closeModal1()">&times;</span>
               </div>
               <div class="header-title">
                 <h2>Bank Details</h2>
               </div>
-              <div class="bank-content">
+              <form id="bank_details" >
+                  <div class="bank-content">
+    
+                    <div class="bank-input">
+                      <label for="">Bank Name <br>
+                        <input type="text">
+    
+                      </label>
+                      <label for="">Account Name <br>
+                        <input type="text">
+    
+                      </label>
+                    </div>
+                    <div class="bank-input">
+                      <label for="">Account Number <br>
+                        <input type="text">
+    
+                      </label>
+                      <label for="">BVN <br>
+                        <input type="text">
+    
+                      </label>
+                    </div>
+                    <div class="bank-input">
+                      <label for="">Bank Code <br>
+                        <input type="text">
+    
+                      </label>
+                      <label for="">Account Type <br>
+                        <select name="" id="">
+                          <option value="SAVINGS">SAVINGS</option>
+                          <option value="CURRENT">CURRENT</option>
+                        </select>
+    
+                      </label>
+                    </div>
+                  </div>
+              </form>
 
-                <div class="bank-input">
-                  <label for="">Bank Name <br>
-                    <input type="text">
-
-                  </label>
-                  <label for="">Account Name <br>
-                    <input type="text">
-
-                  </label>
-                </div>
-                <div class="bank-input">
-                  <label for="">Account Number <br>
-                    <input type="text">
-
-                  </label>
-                  <label for="">BVN <br>
-                    <input type="text">
-
-                  </label>
-                </div>
-                <div class="bank-input">
-                  <label for="">Bank Code <br>
-                    <input type="text">
-
-                  </label>
-                  <label for="">Account Type <br>
-                    <select name="" id="">
-                      <option value="SAVINGS">SAVINGS</option>
-                      <option value="CURRENT">CURRENT</option>
-                    </select>
-
-                  </label>
-                </div>
-              </div>
             </div>
+
+
             <div class="form-group">
               <input type="submit" value="Submit">
             </div>
@@ -507,107 +512,113 @@
         <!-- client-kyc modal -->
         <div class="profile" id="kyc">
           <div class="profile-content-box">
-            <div class="kyc " style="margin-bottom: 1rem;">
-              <div class="exit">
-                <span class="close" onclick="closeModal2()">&times;</span>
-              </div>
-              <div class="header-title">
-                <h2>KYC Details</h2>
-              </div>
-              <div class="kyc-content">
-
-                <div class="kyc-input">
-                  <label for="">Goverment ID <br>
-                    <input type="text">
-                  </label>
-                  <label for="">ID Number <br>
-                    <input type="text">
-                  </label>
+            <form id="legal_documents" >
+              <div class="kyc " style="margin-bottom: 1rem;">
+                <div class="exit">
+                  <span class="close" onclick="closeModal2()">&times;</span>
                 </div>
-                <div class="kyc-input">
-                  <label for="">Upload ID <br>
-                    <input type="file" style="background-color: grey; cursor: pointer;">
-                  </label>
-                  <label for="">Address Proof <br>
-                    <input type="file" style="background-color: grey; cursor: pointer;">
-                  </label>
+                <div class="header-title">
+                  <h2>KYC Details</h2>
                 </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="submit" value="Submit">
-            </div>
-          </div>
-        </div>
-        <!-- /client-kyc modal -->
-        <!-- client-guarantor modal -->
-        <div class="profile" id="guarantor">
-          <div class="profile-content-box">
-            <div class="guarantor">
-              <div class="exit">
-                <span class="close" onclick="closeModal3()">&times;</span>
-              </div>
-              <div class="header-title">
-                <h2>Guarantor Details</h2>
-              </div>
-
-              <div class="profile-content">
-                <div class="profile-input">
-                  <label for="">First Name <br>
-                    <input type="text">
-
-                  </label> <br> <br>
-                  <label for="">Last Name <br>
-                    <input type="text">
-                  </label>
-
-                </div>
-
-                <div class="profile-input">
-                  <label for="">Email 📧<br>
-                    <input type="text">
-
-                  </label>
-                  <label for="">Phone Number 📞<br>
-                    <input type="tel">
-
-                  </label>
-                </div>
-
-                <div class="profile-input">
-                  <label for="" style="width: 100%;">Address 📍<br>
-                    <input type="text" style="width: 100%;">
-
-                  </label>
-                </div>
-                <div class="profile-input">
-                  <label for="">Date Of Birth 📅<br>
-                    <input type="date">
-
-                  </label>
-                  <label for="">Gender 🚹🚺<br>
-                    <select name="" id="">
-                      <option value="MALE">MALE</option>
-                      <option value="FEMALE">FEMALE</option>
-                    </select>
-
-                  </label>
-
-                </div>
-                <div class="profile-input">
-                  <label for="">Employment Type 🧰| 🛠 |⛑<br>
-                    <input type="text">
-
-                  </label>
-                  <label for="">Net Salary 💰<br>
-                    <input type="tel">
-
-                  </label>
+                <div class="kyc-content">
+                  <div class="kyc-input">
+                    <label for="">Goverment ID <br>
+                      <input type="text">
+                    </label>
+                    <label for="">ID Number <br>
+                      <input type="text">
+                    </label>
+                  </div>
+                  <div class="kyc-input">
+                    <label for="">Upload ID <br>
+                      <input type="file" style="background-color: grey; cursor: pointer;">
+                    </label>
+                    <label for="">Address Proof <br>
+                      <input type="file" style="background-color: grey; cursor: pointer;">
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
                 <input type="submit" value="Submit">
               </div>
+            </form>
+          </div>
+        </div>
+
+        
+        <!-- /client-kyc modal -->
+        <!-- client-guarantor modal -->
+        <div class="profile" id="guarantor">
+          <div class="profile-content-box">
+            <div class="guarantor">
+              <form id="guarantor" >
+                <div class="exit">
+                  <span class="close" onclick="closeModal3()">&times;</span>
+                </div>
+                <div class="header-title">
+                  <h2>Guarantor Details</h2>
+                </div>
+  
+                <div class="profile-content">
+                  <div class="profile-input">
+                    <label for="">First Name <br>
+                      <input type="text">
+  
+                    </label> <br> <br>
+                    <label for="">Last Name <br>
+                      <input type="text">
+                    </label>
+  
+                  </div>
+  
+                  <div class="profile-input">
+                    <label for="">Email 📧<br>
+                      <input type="text">
+  
+                    </label>
+                    <label for="">Phone Number 📞<br>
+                      <input type="tel">
+  
+                    </label>
+                  </div>
+  
+                  <div class="profile-input">
+                    <label for="" style="width: 100%;">Address 📍<br>
+                      <input type="text" style="width: 100%;">
+  
+                    </label>
+                  </div>
+                  <div class="profile-input">
+                    <label for="">Date Of Birth 📅<br>
+                      <input type="date">
+  
+                    </label>
+                    <label for="">Gender 🚹🚺<br>
+                      <select name="" id="">
+                        <option value="MALE">MALE</option>
+                        <option value="FEMALE">FEMALE</option>
+                      </select>
+  
+                    </label>
+  
+                  </div>
+                  <div class="profile-input">
+                    <label for="">Employment Type 🧰| 🛠 |⛑<br>
+                      <input type="text">
+  
+                    </label>
+                    <label for="">Net Salary 💰<br>
+                      <input type="tel">
+  
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+
             </div>
           </div>
         </div>
@@ -618,7 +629,7 @@
 
 
         <!-- Loan modal -->
-        <div class="profile" id="loan1">
+        <!-- <div class="profile" id="loan1">
 
           <div class="container" id="loan-receipt">
             <div class="exit">
@@ -650,9 +661,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- create loan modal -->
-        <div class="profile" id="loan">
+        <!-- <div class="profile" id="loan">
 
           <div class="Loan-create">
             <div class="exit">
@@ -699,10 +710,10 @@
               </div>
             </form>
           </div>
-        </div>
+        </div> -->
         <!-- create personal loan -->
 
-        <div class="profile" id="personal-loan">
+        <!-- <div class="profile" id="personal-loan">
 
           <div class="Loan-create">
             <div class="exit">
@@ -744,10 +755,10 @@
               </div>
             </form>
           </div>
-        </div>
+        </div> -->
         <!-- create house loan -->
 
-        <div class="profile" id="house-loan">
+        <!-- <div class="profile" id="house-loan">
 
           <div class="Loan-create">
             <div class="exit">
@@ -789,10 +800,10 @@
               </div>
             </form>
           </div>
-        </div>
+        </div> -->
         <!-- create business loan -->
 
-        <div class="profile" id="business-loan">
+        <!-- <div class="profile" id="business-loan">
 
           <div class="Loan-create">
             <div class="exit">
@@ -834,10 +845,10 @@
               </div>
             </form>
           </div>
-        </div>
+        </div> -->
         <!-- create personal loan -->
 
-        <div class="profile" id="education-loan">
+        <!-- <div class="profile" id="education-loan">
 
           <div class="Loan-create">
             <div class="exit">
@@ -879,7 +890,7 @@
               </div>
             </form>
           </div>
-        </div>
+        </div> -->
 
 
 
@@ -889,7 +900,6 @@
     </section>
 
   </main>
-
   <script src="./scripts/script.js"></script>
   <script src="./scripts/profile.js"></script>
 </body>
