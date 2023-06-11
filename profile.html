@@ -225,7 +225,7 @@
             <div class="client-profile-left">
               <div class="card-client-personal" id="guarantor_one">
                 <div class="edit">
-                  <i onclick="showModal3()" class="fa-regular fa-pen-to-square"></i>
+                  <i onclick="showModal3()" id="guarantorBtn" class="fa-regular fa-pen-to-square"></i>
                 </div>
                 <div class="header-title">
                   <h2 class="guarantor-details">Guarantor Details 🤝</h2>
@@ -246,7 +246,7 @@
                 </li>
                 <li>
                   <div class="title">Birthday: 📅</div>
-                  <div class="text" id="guarantor_one_birthday">24th July 1999</div>
+                  <div class="text" id="guarantor_one_birthday">1999-07-24</div>
                 </li>
                 <li>
                   <div class="title">Gender: 🚹🚺</div>
@@ -266,14 +266,14 @@
             <div class="client-profile-right">
               <div class="card-client-personal" id="guarantor_two">
                 <div class="edit">
-                  <i onclick="showModal3()" class="fa-regular fa-pen-to-square"></i>
+                  <i onclick="showModal3()" id="guarantorBtn2" class="fa-regular fa-pen-to-square"></i>
                 </div>
                 <div class="header-title">
                   <h2 class="guarantor-details">Guarantor Details 🤝</h2>
                 </div>
                 <li>
                   <div class="title">Name</div>
-                  <div class="text" id="guarantor_two_name">Adebayo Segun James</div>
+                  <div class="text" id="guarantor_two_name">Ciroma Chukwuma Adekunle</div>
                 </li>
                 <li>
                   <div class="title">Phone 📞</div>
@@ -283,23 +283,23 @@
                   <div class="title">Email: 📧
                   </div>
                   <div class="text" id="guarantor_two_email">
-                    johndoe@example.com</div>
+                    CiromaKunle@yahoo.com</div>
                 </li>
                 <li>
                   <div class="title">Birthday: 📅</div>
-                  <div class="text" id="guarantor_two_birthday">24th July 1999</div>
+                  <div class="text" id="guarantor_two_birthday">1981-02-15</div>
                 </li>
                 <li>
                   <div class="title">Gender: 🚹🚺</div>
-                  <div class="text" id="guarantor_two_gender">Male</div>
+                  <div class="text" id="guarantor_two_gender">FEMALE</div>
                 </li>
                 <li>
                   <div class="title">Work: 🧰</div>
-                  <div class="text" id="guarantor_two_work">Civil Servant</div>
+                  <div class="text" id="guarantor_two_work">Nurse</div>
                 </li>
                 <li>
                   <div class="title">Address: 📍</div>
-                  <div class="text" id="guarantor_two_address">1861 Bayonne Ave, Manchester bass nusuhi</div>
+                  <div class="text" id="guarantor_two_address">Ademati Ave, Maryland, Lagos</div>
                 </li>
               </div>
             </div>
@@ -552,7 +552,7 @@
         <div class="profile" id="guarantor">
           <div class="profile-content-box">
             <div class="guarantor">
-              <form id="guarantor" >
+              <form id="guarantorForm" >
                 <div class="exit">
                   <span class="close" onclick="closeModal3()">&times;</span>
                 </div>
@@ -563,39 +563,39 @@
                 <div class="profile-content">
                   <div class="profile-input">
                     <label for="">First Name <br>
-                      <input type="text">
+                      <input type="text" id="gfirstName">
   
                     </label> <br> <br>
                     <label for="">Last Name <br>
-                      <input type="text">
+                      <input type="text" id="glName">
                     </label>
   
                   </div>
   
                   <div class="profile-input">
                     <label for="">Email 📧<br>
-                      <input type="text">
+                      <input type="text" id="gEmail">
   
                     </label>
                     <label for="">Phone Number 📞<br>
-                      <input type="tel">
+                      <input type="tel" id="gPhone">
   
                     </label>
                   </div>
   
                   <div class="profile-input">
                     <label for="" style="width: 100%;">Address 📍<br>
-                      <input type="text" style="width: 100%;">
+                      <input type="text" style="width: 100%;" id="gAddress">
   
                     </label>
                   </div>
                   <div class="profile-input">
                     <label for="">Date Of Birth 📅<br>
-                      <input type="date">
+                      <input type="date" id="gDob">
   
                     </label>
                     <label for="">Gender 🚹🚺<br>
-                      <select name="" id="">
+                      <select name="" id="gGender">
                         <option value="MALE">MALE</option>
                         <option value="FEMALE">FEMALE</option>
                       </select>
@@ -605,11 +605,11 @@
                   </div>
                   <div class="profile-input">
                     <label for="">Employment Type 🧰| 🛠 |⛑<br>
-                      <input type="text">
+                      <input type="text" id="gEmployment">
   
                     </label>
                     <label for="">Net Salary 💰<br>
-                      <input type="tel">
+                      <input type="tel" id="gSalary">
   
                     </label>
                   </div>

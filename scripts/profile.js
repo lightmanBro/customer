@@ -34,6 +34,8 @@ const profile = {
   },
   //Guarantor One innerHtml
   guarantorOne:{
+    // container:document.querySelector('#guarantor_one'),
+    button:document.querySelector('#guarantorBtn'),
     name:document.querySelector('#guarantor_one li #guarantor_one_name'),
     phone:document.querySelector('#guarantor_one li #guarantor_one_phone'),
     email:document.querySelector('#guarantor_one li #guarantor_one_email'),
@@ -45,6 +47,7 @@ const profile = {
   },
   //Guarantir two innerHtml
   guarantorTwo:{
+    button:document.querySelector('#guarantorBtn2'),
     name:document.querySelector('#guarantor_two li #guarantor_two_name'),
     phone:document.querySelector('#guarantor_two li #guarantor_two_phone'),
     email:document.querySelector('#guarantor_two li #guarantor_two_email'),
@@ -52,12 +55,43 @@ const profile = {
     address:document.querySelector('#guarantor_two li #guarantor_two_address'),
     gender:document.querySelector('#guarantor_two li #guarantor_two_gender'),
     work:document.querySelector('#guarantor_two li #guarantor_two_work')
+  },
+  guarantorModal:{
+      form: document.querySelector('#guarantorForm'),
+      formTitle: document.querySelector('#guarantorForm .header-title h2'),
+      fName:document.querySelector('#guarantorForm #gfirstName'),
+      lName:document.querySelector('#guarantorForm #glName'),
+      email:document.querySelector('#guarantorForm #gEmail'),
+      phone:document.querySelector('#guarantorForm #gPhone'),
+      address:document.querySelector('#guarantorForm #gAddress'),
+      gender:document.querySelector('#guarantorForm #gGender'),
+      dob:document.querySelector('#guarantorForm #gDob'),
+      employment:document.querySelector('#guarantorForm #gEmployment'),
+      submitBtn:document.querySelector('#guarantor input[type="submit"]')
+
   }
 
 };
 
-console.log("🚀 ~ file: profile.js:2 ~ profile:", profile);
+profile.guarantorOne.button.addEventListener('click',(e)=>{
+    // profile.guarantorModal.fName.value = profile.guarantorOne.name.innerHTML;
+    profile.guarantorModal.email.value = profile.guarantorOne.email.innerHTML;
+    profile.guarantorModal.phone.value = profile.guarantorOne.phone.innerHTML;
+    profile.guarantorModal.address.value = profile.guarantorOne.address.innerHTML;
+    profile.guarantorModal.dob.value = profile.guarantorOne.birthday.textContent;
+    profile.guarantorModal.employment.value = profile.guarantorOne.work.innerHTML;
 
+})
+profile.guarantorTwo.button.addEventListener('click',(e)=>{
+    profile.guarantorModal.email.value = profile.guarantorTwo.email.innerHTML;
+    profile.guarantorModal.phone.value = profile.guarantorTwo.phone.innerHTML;
+    profile.guarantorModal.address.value = profile.guarantorTwo.address.innerHTML;
+    profile.guarantorModal.dob.value = profile.guarantorTwo.birthday.textContent;
+    profile.guarantorModal.gender.value = profile.guarantorTwo.gender.innerHTML;
+    profile.guarantorModal.employment.value = profile.guarantorTwo.work.innerHTML;
+})
+
+    
 userName = sessionStorage.getItem("userName");
 userId = sessionStorage.getItem("userId");
 
