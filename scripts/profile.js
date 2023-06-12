@@ -40,7 +40,7 @@ const profile = {
     oldPassword:document.querySelector('#password #old_password'),
     newPassword:document.querySelector('#password #new_passowrd'),
     newPasswordConfirm:document.querySelector('#password #confirm_new_password'),
-    button:document.querySelector('#password ')
+    button:document.querySelector('#password input[type="submit"]')
   },
   //Bank Details inerHtml
   bank: {
@@ -115,13 +115,14 @@ const profile = {
     address: document.querySelector("#guarantorForm #gAddress"),
     gender: document.querySelector("#guarantorForm #gGender"),
     dob: document.querySelector("#guarantorForm #gDob"),
+    netSalary: document.querySelector("#guarantorForm #gSalary"),
     employment: document.querySelector("#guarantorForm #gEmployment"),
     submitBtn: document.querySelector('#guarantor input[type="submit"]'),
   },
 };
 
 
-console.log(profile.client.company);
+console.log(profile.passwordModal);
 profile.guarantorOne.button.addEventListener("click", (e) => {
   // profile.guarantorModal.fName.value = profile.guarantorOne.name.innerHTML;
   profile.guarantorModal.fName.value = profile.guarantorOne.name[0].innerHTML;
@@ -254,30 +255,91 @@ async function receivedFromDb(url) {
 }
 
 //2
-const testInputNum = function (input) {
+const testInputNum = function (input,inputBtn) {
   let inputValue = input.value.trim();
   if (/^\d+$/.test(inputValue)) {
-    register.submitBtn.disabled = false;
-    register.submitBtn.style.backgroundColor = "rgb(46, 204, 113)";
+    inputBtn.disabled = false;
+    inputBtn.style.backgroundColor = "rgba(0, 0, 0, 0.87)";
   } else {
-    register.submitBtn.disabled = true;
-    register.submitBtn.style.backgroundColor = "red";
+    inputBtn.disabled = true;
+    inputBtn.style.backgroundColor = "red";
   }
 };
 
-const testInputSpecialChar = function (input) {
+const testInputSpecialChar = function (input,inputBtn) {
   let inputValue = input.value.trim();
   if (!/[&<>'"`=]/.test(inputValue)) {
-    register.submitBtn.disabled = false;
-    register.submitBtn.style.backgroundColor = "rgb(46, 204, 113)";
-    register.passwordError.style.display = "none";
+    inputBtn.disabled = false;
+    inputBtn.style.backgroundColor = "rgba(0, 0, 0, 0.87)";
+    // inputBtn.passwordError.style.display = "none";
   } else {
-    register.submitBtn.disabled = true;
-    register.submitBtn.style.backgroundColor = "red";
-    register.passwordError.style.display = "block";
+    inputBtn.disabled = true;
+    inputBtn.style.backgroundColor = "red";
+    // inputBtn.passwordError.style.display = "block";
   }
 };
+profileModalInputs= [
+  profile.profileModal.userFirstName,
+  profile.profileModal.userMiddName,
+  profile.profileModal.userLastName,
+  profile.profileModal.userEmail,
+  profile.profileModal.userAddress,
+  profile.profileModal.userCompany,
+  profile.profileModal.userEmploymentType,
+  profile.profileModal.userJobPosition
+];
 
+bankModalInputs = [
+  profile.bankModal.accountName,
+  profile.bankModal.bankName
+];
+bankModalInputsNum = [
+  profile.bankModal.accountNumber,
+  profile.bankModal.bankCode,
+  profile.bankModal.bvnNumber
+]
+
+//Add guarantor middle name;
+guarantorModalInputs = [
+  profile.guarantorModal.fName,
+  profile.guarantorModal.lName,
+  profile.guarantorModal.email,
+  profile.guarantorModal.address,
+  profile.guarantorModal.employment
+]
+
+bankModalInputs.forEach(input=>{
+  input.addEventListener('input',(e)=>{
+    testInputSpecialChar(e.target,profile.bankModal.submitBtn);
+  })
+});
+bankModalInputsNum.forEach(input=>{
+  input.addEventListener('input',(e)=>{
+    testInputNum(e.target,profile.bankModal.submitBtn);
+  })
+})
+
+guarantorModalInputs.forEach(input=>{
+  input.addEventListener('input',(e)=>{
+    testInputSpecialChar(e.target,profile.guarantorModal.submitBtn)
+  })
+});
+
+profile.guarantorModal.phone.addEventListener('input',(e)=>{
+  testInputNum(e.target,profile.guarantorModal.submitBtn);
+})
+//Testing input values inside the phone and amount.
+profile.profileModal.userPhone.addEventListener('input',(e)=>{
+  testInputNum(e.target,profile.profileModal.submitBtn);
+})
+profile.profileModal.userNetSalary.addEventListener('input',(e)=>{
+  testInputNum(e.target,profile.profileModal.submitBtn);
+})
+profileModalInputs.forEach(input=>{
+  input.addEventListener('input',(e)=>{
+    testInputSpecialChar(e.target,profile.profileModal.submitBtn)
+  })
+})
 profile.profileModal.submitBtn.addEventListener('click',(e)=>{
   e.preventDefault();
   let formData = new FormData();
@@ -298,7 +360,24 @@ profile.profileModal.submitBtn.addEventListener('click',(e)=>{
   const url = 'phpfilepath'
   // sendToDb(url,urlEncodedData)
 })
-
+profile.guarantorModal.submitBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
+  let formData = new FormData();
+  formData.append('firstName', profile.guarantorModal.fName.value.trim());
+  formData.append('lastName', profile.guarantorModal.lName.value.trim());
+  formData.append('email', profile.guarantorModal.email.value.trim());
+  formData.append('phone', profile.guarantorModal.phone.value.trim());
+  formData.append('address', profile.guarantorModal.address.value.trim());
+  formData.append('employment', profile.guarantorModal.employment.value.trim());
+  formData.append('dob', profile.guarantorModal.dob.value.trim());
+  formData.append('gender', profile.guarantorModal.gender.value.trim());
+  formData.append('netSalary', profile.guarantorModal.netSalary.value.trim());
+  const urlEncodedData = new URLSearchParams(formData).toString();
+  console.log(urlEncodedData);
+  //Send the form data to the database.
+  const url = 'phpfilepath'
+  // sendToDb(url,urlEncodedData)
+})
 async function sendToDb(url, formData) {
   try {
     let response = await fetch(url, {

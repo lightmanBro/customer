@@ -25,22 +25,21 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
-          /* background: #f6f6f6; */
+          
           color: grey;
           margin: .5rem;
-          margin-top: 1rem;
-          /* box-shadow: 2.5px 2.5px 0px 0px rgba(0, 0, 0, 0.677); */
+}
+
+.client-profile-left:first-child{
+  margin-top: 2rem;
 }
 .client-profile-right{
   background: linear-gradient(to top,white, #ecf0f1);
-          margin:.5rem;
           border: 2px solid rgba(128, 128, 128, 0.762);
           border-radius: .2rem;
           width: 50%;
-          /* background:  #f6f6f6; */
           color: grey;
-          /* box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.677); */
-}
+          }
 .client-img{
           background-color: grey;
           height: 150px;
@@ -135,33 +134,37 @@
           height: 100%;
           overflow: auto;
           background :linear-gradient(to bottom, #27ae60, #2ecc71);
-          /* animation: myAnim 3s ease .25s 1 reverse backwards; */
+          animation: myAnim .25s ease-in .0s ;
 }
 @keyframes myAnim {
 	0% {
-		animation-timing-function: ease-out;
-		transform: scale(1);
-		transform-origin: center center;
-	}
-
-	10% {
 		animation-timing-function: ease-in;
-		transform: scale(0.91);
+		transform: scale(0);
+		transform-origin: center;
 	}
 
-	17% {
-		animation-timing-function: ease-out;
-		transform: scale(0.98);
-	}
-
-	33% {
+	25% {
 		animation-timing-function: ease-in;
-		transform: scale(0.87);
+		transform: scale(0.25);
+    opacity: .25;
 	}
 
-	45% {
+	50% {
 		animation-timing-function: ease-out;
+		transform: scale(0.5);
+    opacity: .5;
+	}
+
+	75% {
+		animation-timing-function: ease-in;
+		transform: scale(0.75);
+    opacity: .75;
+	}
+
+	100% {
+		animation-timing-function: ease-in;
 		transform: scale(1);
+    opacity: 1;
 	}
 }
 .profile-content-box{
