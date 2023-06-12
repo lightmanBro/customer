@@ -86,10 +86,10 @@
                 <input type="file" accept="jpg">
               </div>
               <div class="client-details">
-                <h3>Adedoyin Samuel Kehinde</h3>
-                <h4>Company: Global Technologies</h4>
-                <h4>Job Position: Manager</h4>
-                <h4>Net Salary: 70,000</h4>
+                <h3><span>Adedoyin</span> <span>Samuel</span> <span>Kehinde</span></h3>
+                <h4>Company: <span>Global Technologies</span></h4>
+                <h4>Job Position: <span>Manager</span></h4>
+                <h4>Net Salary: ₦<span>70,000</span></h4>
                 <h4>Client ID: 100349287</h4>
                 <h4>Next Payment: 20,000</h4>
                 <h4>Payment Date: 25-09-2023</h4>
@@ -102,7 +102,7 @@
               <div class="card-client-personal" id="summary">
                 <div class="header-title">
                   <div class="edit">
-                    <i onclick="showModal()" class="fa-regular fa-pen-to-square"></i>
+                    <i onclick="showModal()" id="summary-btn" class="fa-regular fa-pen-to-square"></i>
                   </div>
                   <h2 class="profileDetails">Profile Details 👩🏾👨🏾</h2>
                 </div>
@@ -118,7 +118,7 @@
                 </li>
                 <li>
                   <div class="title">Birthday: 📅</div>
-                  <div class="text birthday">24th July 1999</div>
+                  <div class="text birthday">1999-07-24</div>
                 </li>
                 <li>
                   <div class="title">Address: 📍</div>
@@ -145,9 +145,9 @@
           <!-- Bank And KYC Details -->
           <div class="client-profile">
             <div class="client-profile-left">
-              <div class="card-client-personal" id="bank">
+              <div class="card-client-personal" id="bankModal">
                 <div class="edit">
-                  <i id="bankModal" class="fa-regular fa-pen-to-square"></i>
+                  <i onclick="showModal1()" class="fa-regular fa-pen-to-square"></i>
                 </div>
                 <div class="header-title">
                   <h2 class="bankDetails">Bank Details</h2>
@@ -232,7 +232,9 @@
                 </div>
                 <li>
                   <div class="title">Name</div>
-                  <div class="text" id="guarantor_one_name">Adebayo Segun James</div>
+                  <div class="text" id="guarantor_one_name">
+                    <span>Bobola</span><span>Akinbayo</span> <span>Morenikeji</span>
+                  </div>
                 </li>
                 <li>
                   <div class="title">Phone 📞</div>
@@ -273,7 +275,9 @@
                 </div>
                 <li>
                   <div class="title">Name</div>
-                  <div class="text" id="guarantor_two_name">Ciroma Chukwuma Adekunle</div>
+                  <div class="text" id="guarantor_two_name">
+                    <span>Ciroma</span><span>Chukwuma</span> <span>Adekunle</span>
+                  </div>
                 </li>
                 <li>
                   <div class="title">Phone 📞</div>
@@ -346,59 +350,61 @@
 
                 <div class="profile-input">
                   <label for="">First Name <br>
-                    <input type="text">
-
-                  </label> <br> <br>
+                    <input type="text" id="ufName">
+                  </label>
+                  <label for="">Middle Name <br>
+                    <input type="text" id="umName">
+                  </label>
                   <label for="">Last Name <br>
-                    <input type="text">
+                    <input type="text" id="ulName">
                   </label>
 
                 </div>
 
                 <div class="profile-input">
                   <label for="">Email 📧<br>
-                    <input type="text">
+                    <input type="text" id="uEmail">
 
                   </label>
                   <label for="">Phone Number 📞<br>
-                    <input type="tel">
+                    <input type="tel" id="uPhone">
 
                   </label>
                 </div>
 
                 <div class="profile-input">
                   <label for="" style="width: 100%;">Address 📭<br>
-                    <input type="text" style="width: 100%;">
+                    <input type="text" style="width: 100%;" id="uAdd">
 
                   </label>
                 </div>
                 <div class="profile-input">
                   <label for="">Date Of Birth 📆<br>
-                    <input type="date">
+                    <input type="date" id="uDob">
 
                   </label>
                   <label for="">Company Of Employment 🧰<br>
-                    <input type="text">
+                    <input type="text" id="uCompany">
 
                   </label>
                 </div>
                 <div class="profile-input">
                   <label for="">Employment Type 🧰| 🛠 |⛑<br>
-                    <input type="text">
+                    <input type="text" id="uEmployType">
 
                   </label>
                   <label for="">Net Salary 💰<br>
-                    <input type="tel">
+                    <input type="tel" id="uNetSalary">
 
                   </label>
                 </div>
                 <div class="profile-input">
                   <label for="">Job Position 1️⃣-🔟<br>
-                    <input type="text">
+                    <input type="text" id="uJobPos">
 
                   </label>
                   <label for="">Gender 🚹 | 🚺<br>
-                    <select name="" id="">
+                    <select name="" id="uGender">
                       <option value="MALE">MALE</option>
                       <option value="FEMALE">FEMALE</option>
                     </select>
@@ -456,7 +462,7 @@
 
             <div class="profile-bank ">
               <div class="exit">
-                <span class="bankModalClose" onclick="closeModal1()">&times;</span>
+                <span class="bankModalClose close" onclick="closeModal1()">&times;</span>
               </div>
               <div class="header-title">
                 <h2>Bank Details</h2>
@@ -466,31 +472,31 @@
     
                     <div class="bank-input">
                       <label for="">Bank Name <br>
-                        <input type="text">
+                        <input type="text" id="bankName">
     
                       </label>
                       <label for="">Account Name <br>
-                        <input type="text">
+                        <input type="text" id="accountName">
     
                       </label>
                     </div>
                     <div class="bank-input">
                       <label for="">Account Number <br>
-                        <input type="text">
+                        <input type="text" id="accountNumber">
     
                       </label>
                       <label for="">BVN <br>
-                        <input type="text">
+                        <input type="text" id="bvnNumber">
     
                       </label>
                     </div>
                     <div class="bank-input">
                       <label for="">Bank Code <br>
-                        <input type="text">
+                        <input type="text" id="bankCode">
     
                       </label>
                       <label for="">Account Type <br>
-                        <select name="" id="">
+                        <select name="" id="accountType">
                           <option value="SAVINGS">SAVINGS</option>
                           <option value="CURRENT">CURRENT</option>
                         </select>
@@ -498,13 +504,11 @@
                       </label>
                     </div>
                   </div>
+                  <div class="form-group">
+                    <input type="submit" value="Submit">
+                  </div>
               </form>
 
-            </div>
-
-
-            <div class="form-group">
-              <input type="submit" value="Submit">
             </div>
           </div>
         </div>
@@ -532,9 +536,15 @@
                   <div class="kyc-input">
                     <label for="">Upload ID <br>
                       <input type="file" style="background-color: grey; cursor: pointer;">
+                      <div class="id-image">
+                        <!-- the id image will be displayed here -->
+                      </div>
                     </label>
                     <label for="">Address Proof <br>
                       <input type="file" style="background-color: grey; cursor: pointer;">
+                      <div class="add-img">
+                        <!-- the file image will be displayed here -->
+                      </div>
                     </label>
                   </div>
                 </div>

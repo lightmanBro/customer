@@ -1,588 +1,559 @@
-@media only screen and (max-width: 1500px){
-  /* *{
+@media only screen and (max-width: 1500px) {
+  /* Add your styles here */
+}
+
+@media only screen and (max-width: 850px) {
+  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
-}
-body{
+  }
+
+  body {
     padding: 0;
     margin: 0;
+    font-size: 62.5%;
+  }
+
+  .main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .body-content {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .box-card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav {
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-align: left;
+    color: white;
+    position: absolute;
+    top: 0;
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    background-color: rgb(22, 22, 120);
+    z-index: 999;
+    width: 60%;
+    float: left;
+    padding: 0;
+  }
+
+  .navs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: none;
+  }
+
+  #closePopup {
+    display: block;
+    margin-top: -1rem;
+  }
+
+  header {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    width: 100%;
+  }
+
+  .info {
+    display: flex;
+    width: 30%;
+  }
+
+  .logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .welcome p {
+    font-size: 0.7rem;
+  }
+
+  .image {
+    height: 30px;
+    width: 30px;
+  }
+
+  .id p {
+    font-size: 0.4rem;
+  }
+
+  .loan-card {
+    display: block;
+    padding: 1rem 0.5rem;
+    width: 100%;
+  }
+
+  .card {
+    border: 1px solid rgb(4, 4, 99);
+    padding: 1rem;
+    width: 100%;
+  }
+
+  #Amount,
+  #calendar,
+  #due,
+  #interest,
+  #total,
+  #time,
+  #status,
+  #months {
+    width: 47%;
+  }
+
+  #bussiness,
+  #house,
+  #education,
+  #personal {
+    width: 100%;
+  }
+
+  .loan-card-head h2 {
+    font-size: 1rem;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .apply-loans {
+    display: inline-block;
+    justify-content: space-around;
+  }
+
+  .table-content {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .card p {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  .card p span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--white);
+    text-align: left;
+  }
+
+  .card-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .note p {
+    font-size: 1.2rem;
+  }
+
+  .apply-loan {
+    padding: 1rem 0;
+    text-align: right;
+  }
+
+  .apply-loan button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    margin-left: 1rem;
+  }
+
+  .apply-loans {
+    margin: 0;
+  }
+
+  .search-form {
+    width: auto;
+    margin-top: 0.5rem;
+  }
+
+  .loan-status {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .loan-status button {
+    padding: 0.5rem;
+    border: transparent;
+    cursor: pointer;
+    width: 100%;
+    font-size: small;
+  }
+
+  .loan-status-b {
+    width: auto;
+  }
+
+  .home {
+    padding: 0.5rem;
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  table {
+    font-size: small;
+    margin: 0;
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  th {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    width: auto;
+  }
+
+  tr {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  td {
+    font-size: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.2rem;
+    border: 1px solid rgb(22, 22, 120);
+  }
+
+  .history {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .history p {
+    font-size: 0.5rem;
+  }
+
+  .loan-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem 0;
+    color: white;
+  }
+
+  .client-profile {
+    margin: 1rem 0;
+  }
+
+  .card-flex .search-form {
+    width: 49%;
+  }
+
+  .card-flexs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card-flexs #bussiness {
+    width: 45%;
+  }
+
+  .card-flexs #personal {
+    width: 45%;
+  }
+
+  .card-flexs #education {
+    width: 45%;
+  }
+
+  .card-flexs #house {
+    width: 45%;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .profile-content-box {
+    width: 99%;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .profile-content {
+    padding: 0.5rem;
+  }
+
+  .profile-input {
+    padding: 0.5rem;
+  }
+
+  .profile-input input {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .profile-bank {
+    width: 100%;
+    padding: 0;
+    font-size: 0.5rem;
+  }
+
+  .bank-content {
+    width: 100%;
+  }
+
+  .bank-input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .bank-input input,
+  .kyc-input input {
+    width: 90%;
+  }
+
+  input {
+    font-size: 1rem;
+    width: 47%;
+  }
+
+  .kyc-content {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  #loan-receipt {
+    width: 95%;
+    padding: 0.5rem;
+  }
+
+  .receipt {
+    margin: 1rem 0;
+  }
+
+  .Loan-create {
+    width: 95%;
+  }
 }
 
-.body-content{
-  display: block;
-  margin-top: 2rem;
-  width: 100%;
-  padding: 0;
+@media only screen and (max-width: 500px) {
+  .body-content {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .box-card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .table-content {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .history {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .client-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .client-profile-left,
+  .client-profile-right {
+    width: 90%;
+    margin: auto 1rem;
+  }
+
+  .home.show {
+    padding: 0;
+    width: 90%;
+  }
+
+  .card-flex .search-form {
+    width: 49%;
+  }
+
+  .card-flexs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-flexs #bussiness {
+    width: 95%;
+  }
+
+  .card-flexs #personal {
+    width: 95%;
+  }
+
+  .card-flexs #education {
+    width: 95%;
+  }
+
+  .card-flexs #house {
+    width: 95%;
+  }
 }
 
-.box-card{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  
-}
-.table-content {
-  display: block;
-  text-align: center;
- padding: 2.5rem 0;
- margin: 0;
-width: 100%;
+@media only screen and (max-width: 400px) {
+  .body-content {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+  }
 
-}
+  .box-card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-.apply-loan{
-  padding: 1rem 0;
-  text-align: left;
-  margin-left: 1rem;
+  header {
+    width: 100%;
+  }
 
-} */
-}
-@media only screen and (max-width: 850px)
-{
-          *{
-                    padding: 0;
-                    margin: 0;
-                    box-sizing: border-box;
-                    font-family: 'Work Sans', sans-serif;
-                }
-          body{
-                    padding: 0;
-                    margin: 0;
-          }
-          .main{
-                    padding: 0;
-                    margin: 0;
+  table {
+    width: 100%;
+  }
 
-          }
-          .body-content{
-                    display: block;
-                    margin-top: 2rem;
-                    width: 100%;
-                    padding: 0;
-                    
-                  }
-                  .box-card{
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    
-                  }
+  .history {
+    padding: 0.5rem;
+    width: 100%;
+  }
 
+  .client-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 
-                  .nav{
-                  font-size: 2rem;
-                  margin-top:3rem;
-                  text-align: left;
-                  color: white;
-                  position: absolute;
-                  top: 0;
-                  display: block;
-                  }
+  .client-profile-left,
+  .client-profile-right {
+    width: 90%;
+    margin: auto 1rem;
+  }
 
-
-nav{
-  position: absolute;
-  /* display: none; */
-  top: 0%;
-  left: 0;
-  background-color:  rgb(22, 22, 120);
- z-index: 999;
- width: 60%;
- float: left;
- padding: 0;
-}
-.navs{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9;
-  display: none;
-}
-#closePopup{
-  display: block;
-  margin-top: -1rem;
-}
-header{
-          padding: .5rem;
-          font-size: .5rem;
-          width: 100%;
-        
-}
-.info{
-          display: flex;
-          width: 30%;
-}
-.logo{
-          height: 30px;
-          width: 30px;
-}
-.welcome p{
-          font-size: .7rem;
-}
-.image{
-          height: 30px;
-          width: 30px;
-}
-.id p{
-          font-size: .4rem;
-          }
-          .loan-card{
-                    display: block;
-                    padding: 1rem .5rem;
-                    width: 100%;
-                  }
-                  .card{
-                    border: 1px solid rgb(4, 4, 99);
-                    padding: 1rem;
-                    width: 100%;
-                  }
-                  #Amount, #calendar, #due, #interest, #total, #time, #status, #months{
-                    width: 47%;
-                  }
-                  #bussiness,#house,#education,#personal{
-                    width: 100%;
-                  }
-
-                  .loan-card-head h2{
-                    font-size: 1rem;
-                    text-align: left;
-                    padding: 1rem;
-                  }
-                  .apply-loans{
-                    display: inline-block;
-                    justify-content: space-around;
-                  
-                  }
-
-                  .table-content {
-                    display: block;
-                    text-align: center;
-                   padding: 0;
-                   margin: 0;
-                width: 100%;
-              
-                  }
-
-                  .card p{
-                    font-size: 1.2rem;
-                    font-weight: 800;
-                  
-                  }
-                  .card p span{
-                    font-size: .8rem;
-                    font-weight: 600;
-                    color: var(--white);
-                    text-align: left;
-                  }
-                  .card-flex{
-                    display: flex;
-                    justify-content: space-between;
-                  }
-                  .note p{
-                    font-size: 1.2rem;
-                  }
-                  .apply-loan{
-                    padding: 1rem 0;
-                    text-align: right;
-                  
-                  }
-                  .apply-loan button{
-                    padding: .5rem 1rem;
-                    font-size: 1rem;
-                    cursor: pointer;
-                    background-color: white;
-                    color: black;
-                    border: none;
-                    margin-left: 1rem;
-                  }
-                  .apply-loans{
-                    margin: 0;
-                  }
-                  .search-form{
-                    width: auto;
-                    margin-top: .5rem;
-                  }
-                  .loan-status{
-                    display: flex; 
-                    justify-content: space-around;
-                    width: 100%;
-                  }
-                  
-                  
-                  .loan-status button{
-                  padding: .5rem;
-                  border: transparent;
-                  cursor: pointer;
-                  width: 100%;
-                  font-size: small;
-                  }
-                  .loan-status-b{
-                    width: auto;
-                  }
-               
-                  .home{
-                    padding: .5rem;
-                    width: 100%;
-                    margin-left: 1rem;
-                  }
-                  .table{
-                    width: 100%;
-                  }
-                
-
-table{
-          font-size: small;
-          margin: 0;
-  border-spacing: 0;
-  width: 100%;
-
-          
-}
-th{
-          padding: .5rem;
-          font-size: .5rem;
-          width: auto;
-        }
-        tr{
-          width: 100%;
-          margin-bottom: 1rem;
-        }
-        td{
-          font-size: .5rem;
-          text-align: center;
-          font-weight: 600;
-          padding: .2rem;
-          border: 1px solid rgb(22, 22, 120);
-        }
-        .history{
-          padding: .5rem;
-          width: 100%;
-        }
-        .history p{
-          font-size: .5rem;
-        }
-        .loan-head{
-          display: flex;
-          justify-content: space-between;
-          width: 100%;
-          margin: 1rem 0;
-          color: white;
-        }
-
-        .client-profile{
-          margin: 1rem 0;
-        }
-        .card-flex .search-form{
-          width: 49%;
-        }
-        .card-flexs{
-          display: flex;
-          justify-content: space-around;
-        }
-        .card-flexs #bussiness {
-          width: 45%;
-        }
-        .card-flexs #personal{
-          width: 45%;
-        }
-        .card-flexs #education{
-          width: 45%;
-        }
-        .card-flexs #house{
-          width: 45%;
-        }
-        .profile{
-          width: 100%;
-        }
-        .profile-content-box{
-          width: 99%;
-          font-size: .5rem;
-          padding: .5rem;
-        }
-        .profile-content{
-          padding: .5rem;
-        }
-        .profile-input{
-          padding: .5rem;
-        }
-        .profile-input input{
-          width: 80%;
-          font-size: .5rem;
-        }
-        .profile-bank{
-          width: 100%;
-          padding: 0;
-          font-size: .5rem;
-        
-        }
-        .bank-content{
-          width: 100%;
-        
-        }
-        .bank-input{
-          width: 100%;
-          padding: .5rem;
-        }
-        
-        .bank-input input, .kyc-input input{
-          width: 90%;
-        }
-        input{
-          font-size: .6rem;
-          width: 47%;
-        }
-        
-        .kyc-content{
-          padding: .5rem;
-          margin: .5rem 0;
-        
-        }
-        #loan-receipt{
-          width: 95%;
-          padding: .5rem;
-        }
-        .receipt{
-          margin: 1rem 0;
-        }
-        .Loan-create{
-          width: 95%;
-        }
-
-
-
+  .home.show {
+    margin-left: -0.05rem;
+  }
 }
 
-@media only screen and (max-width: 500px){
-
-
-          .body-content{
-                    display: block;
-                    margin-top: 2rem;
-                    width: 100%;
-                    padding: 0;
-                   
-                  }
-                  .box-card{
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    
-                  }
-                  .table-content {
-                    display: block;
-                    text-align: center;
-                   padding: 0;
-                   margin: 0;
-                   width: 100%;
-              
-                  }
-
-header{
-          width: 100%;
-}
-table{
-          width: 100%;
-}
-.history{
-          padding: .5rem;
-          width: 100%;
-        }
-        #Amount, #calendar, #due, #interest, #total, #time, #status, #months{
-          width: 47%;
-        }
-        .client-profile{
-          display: flex;
-          flex-direction: column;
-          padding: 0;
-}
-.client-profile-left, .client-profile-right{
-width: 100%;
-margin: 1rem 0;
-}
-.home.show {
-      
-         padding: 0;
-         width: 90%;
-        }
-    
-        .card-flex .search-form{
-          width: 49%;
-        }
-        .card-flexs{
-          flex-direction: column;
-          align-items: center;
-        }
-        .card-flexs #bussiness {
-          width: 95%;
-        }
-        .card-flexs #personal{
-          width: 95%;
-        }
-        .card-flexs #education{
-          width: 95%;
-        }
-        .card-flexs #house{
-          width: 95%;
-        }
-}
-@media only screen and (max-width: 400px){
-
-
-          .body-content{
-                    display: block;
-                    margin-top: 2rem;
-                    width: 100%;
-                    padding: 0;
-                 
-                  }
-                  .box-card{
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    
-                  }
-
-header{
-          width: 100%;
-}
-table{
-          width: 100%;
-}
-.history{
-          padding: .5rem;
-          width: 100%;
-        }
-        .client-profile{
-          display: flex;
-          flex-direction: column;
-          padding: 0;
-}
-.client-profile-left, .client-profile-right{
-width: 100%;
-margin: 1rem 0;
-}
-.home.show{
-          margin-left: -.05rem;
+@media only screen and (max-width: 375px) {
+  #table {
+    margin-left: -1rem;
+  }
 }
 
+@media only screen and (max-width: 360px) {
+  .body-content {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .box-card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .table-content {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .history {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .client-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .client-profile-left,
+  .client-profile-right {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .home.show {
+    padding: 0;
+    width: 100%;
+  }
+
+  .card-flexs #bussiness {
+    width: 100%;
+  }
+
+  .card-flexs #personal {
+    width: 100%;
+  }
+
+  .card-flexs #education {
+    width: 100%;
+  }
+
+  .card-flexs #house {
+    width: 100%;
+  }
 }
-@media only screen and (max-width: 375px){
-
-
-#table{
-  margin-left: -1rem;
-}
-}
-@media only screen and (max-width: 400px){
-
-
-          .body-content{
-                    display: block;
-                    margin-top: 2rem;
-                    width: 100%;
-                    padding: 0;
-                   
-                  }
-                  .box-card{
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    
-                  }
-
-header{
-          width: 100%;
-}
-table{
-          width: 80%;
-}
-.history{
-          padding: .5rem;
-          width: 100%;
-        }
-        .home.show{
-          margin-left: -.05rem;
-}
-#pending{
-  margin-left: 1rem;
-}
-}
-
-@media only screen and (max-width: 360px){
-
-
-          .body-content{
-                    display: block;
-                    margin-top: 2rem;
-                    width: 100%;
-                    padding: 0;
-                    
-                  }
-                  .box-card{
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                  }
-                  .table-content {
-                    display: block;
-                    text-align: center;
-                   padding: 0;
-                   margin: 0;
-                   width: 100%;
-              
-                  }
-
-header{
-          width: 100%;
-}
-table{
-          width: 100%;
-}
-#table{
-          margin-left: -2.8rem;
-}
-.history{
-          padding: .5rem;
-          width: 100%;
-          border: 2px solid black;
-        }
-        #Amount, #calendar, #due, #interest, #total, #time, #status, #months{
-          width: 47%;
-        }
-.home.show{
-          margin-left: -.4rem;
-}
-#pending{
-          margin-left: 2.4rem;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
