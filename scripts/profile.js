@@ -36,7 +36,12 @@ const profile = {
     userGender: document.querySelector("#profile #uGender"),
     submitBtn: document.querySelector('#profile input[type="submit"]'),
   },
-
+  passwordModal:{
+    oldPassword:document.querySelector('#password #old_password'),
+    newPassword:document.querySelector('#password #new_passowrd'),
+    newPasswordConfirm:document.querySelector('#password #confirm_new_password'),
+    button:document.querySelector('#password ')
+  },
   //Bank Details inerHtml
   bank: {
     name: document.querySelector("#bankModal li .bankName"),

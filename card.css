@@ -18,8 +18,8 @@
 }
 .client-profile-left{
           background: linear-gradient(to top,white, #ecf0f1);
-          border: 2px solid grey;
-          border-radius: .25rem;
+          border: 2px solid rgba(128, 128, 128, 0.762);
+          border-radius: .2rem;
           padding: 5px;
           width: 50%;
           display: flex;
@@ -28,17 +28,18 @@
           /* background: #f6f6f6; */
           color: grey;
           margin: .5rem;
-          box-shadow: 2.5px 2.5px 0px 0px rgba(0, 0, 0, 0.677);
+          margin-top: 1rem;
+          /* box-shadow: 2.5px 2.5px 0px 0px rgba(0, 0, 0, 0.677); */
 }
 .client-profile-right{
   background: linear-gradient(to top,white, #ecf0f1);
           margin:.5rem;
-          border: 2px solid grey;
-          border-radius: .25rem;
+          border: 2px solid rgba(128, 128, 128, 0.762);
+          border-radius: .2rem;
           width: 50%;
           /* background:  #f6f6f6; */
           color: grey;
-          box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.677);
+          /* box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.677); */
 }
 .client-img{
           background-color: grey;
