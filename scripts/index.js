@@ -51,6 +51,8 @@ async function receivedFromDb(url) {
         sessionStorage.setItem('userId',data.userId);
         //modal box values
         index.loan_applicant_name.value = data.userName;
+
+        
         //Dashboard
         index.active_loan.innerHTML = data.active_loan;
         index.pending_loan.innerHTML= data.pending_loan;
@@ -152,13 +154,13 @@ const url = "";
 index.submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const formData = new FormData();
-  formData.append("loanType", index.loan_type.value);
-  formData.append("ApplicantName", index.loan_applicant_name.value);
-  formData.append("Amount", index.loan_amount.value);
-  formData.append("Interest", index.loan_interest.value);
-  formData.append("Duration", index.loan_duration.value);
-  formData.append("Total", index.loan_total.value);
-  formData.append("MonthlyDue", index.loan_monthly_payment.value);
+  formData.append("loanType", index.loan_type.value.trim());
+  formData.append("ApplicantName", index.loan_applicant_name.value.trim());
+  formData.append("Amount", index.loan_amount.value.trim());
+  formData.append("Interest", index.loan_interest.value.trim());
+  formData.append("Duration", index.loan_duration.value.trim());
+  formData.append("Total", index.loan_total.value.trim());
+  formData.append("MonthlyDue", index.loan_monthly_payment.value.trim());
   const urlEncodedData = new URLSearchParams(formData).toString();
 
   //Send data to the database;

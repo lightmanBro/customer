@@ -273,6 +273,27 @@ const testInputSpecialChar = function (input) {
   }
 };
 
+profile.profileModal.submitBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
+  let formData = new FormData();
+  formData.append('fistName',profile.profileModal.userFirstName.value.trim());
+  formData.append('middleName',profile.profileModal.userMiddName.value.trim());
+  formData.append('lastName',profile.profileModal.userLastName.value.trim());
+  formData.append('gender',profile.profileModal.userGender.value.trim());
+  formData.append('email',profile.profileModal.userEmail.value.trim());
+  formData.append('phone',profile.profileModal.userPhone.value.trim());
+  formData.append('address',profile.profileModal.userAddress.value.trim());
+  formData.append('dob',profile.profileModal.userDOB.value.trim());
+  formData.append('company',profile.profileModal.userCompany.value.trim());
+  formData.append('companyType',profile.profileModal.userEmploymentType.value.trim());
+  formData.append('role',profile.profileModal.userJobPosition.value.trim());
+  const urlEncodedData = new URLSearchParams(formData).toString();
+  console.log(urlEncodedData);
+  //Send the form data to the database.
+  const url = 'phpfilepath'
+  // sendToDb(url,urlEncodedData)
+})
+
 async function sendToDb(url, formData) {
   try {
     let response = await fetch(url, {
