@@ -167,18 +167,21 @@
     opacity: 1;
 	}
 }
+
+
 .profile-content-box{
   background: linear-gradient(to top, #27ae60, #2ecc71);
   margin: auto;
           padding: 20px;
           border: 1px solid #888;
-          width: 60%;
+          width: 25rem;
           color: white;
 }
 .profile-content{
   background-color: rgba(255, 255, 255, 0.937);
+  width: 100%;
   color: black;
-  border: none;
+  /* border: 2px solid tomato; */
 }
 label {
   display: block;
@@ -187,7 +190,7 @@ input[type="text"],
 input[type="password"],
 input[type="tel"],
 input[type="date"] {
-  width: 80%;
+  width: 100%;
   padding: 5px;
   border: 1px solid #2c3e50;
   border-radius: 3px;

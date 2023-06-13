@@ -533,9 +533,6 @@ td a {
   color: black;
 }
 
-.profile{
-  
-}
 
 .profile,
 .profile-bank {
@@ -577,24 +574,26 @@ td a {
 .profile-input {
   /* border: 2px solid black; */
   text-align: center;
-  margin: 0;
+  margin: auto;
   padding: .7rem;
-  display: flex;
+  /* display: flex; */
   width: 100%;
 }
-
+.profile-input input{
+  width: 100%;
+}
 .profile-input:focus{
   border-color: #27ae60;
 }
 
 .bank-input {
-  display: flex;
+  /* display: flex; */
   text-align: center;
   padding: .7rem;
 }
 
 .kyc-input {
-  display: flex;
+  /* display: flex; */
   text-align: center;
   padding: .7rem;
 }
@@ -625,7 +624,7 @@ td a {
 
 label {
   font-size: 1rem;
-  width: 50%;
+  /* width: 50%; */
 
 }
 
