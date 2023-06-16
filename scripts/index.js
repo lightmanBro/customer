@@ -149,6 +149,9 @@ async function sendToDb(url, formData) {
     }
   }
 
+
+
+//Sending Loan data to the database depending on the loan type selected
 const url = "";
 
 index.submitBtn.addEventListener("click", (e) => {

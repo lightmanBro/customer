@@ -447,7 +447,7 @@ select {
 }
 
 .search-form button {
-  background: linear-gradient(to bottom, #f1c40f, #2ecc71);
+  background: #2ecc71;
   color: white;
   border-radius: .2rem;
   width: 100%;
@@ -666,5 +666,5 @@ select {
 
 footer{
   padding: 5rem;
-  background:linear-gradient(to left,#2c3e50,#2ecc71) ;
+  background:#2ecc71;
 }

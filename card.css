@@ -217,6 +217,22 @@ input[type="date"] {
           color: black;
         }
 /* modals */
+
+
+/* Loan description modal */
+
+.Active-loan-receipt-content p{
+  display: flex;
+  padding: .5rem;
+  justify-content: space-between;
+  border-bottom: #888 1px solid;
+}
+.receipt-content p,.Active-loan-receipt-content p, span{
+color: #157f55;
+font-weight: 600;
+}
+
+
 /* Loan Modals */
 .Loan-create {
           width: 40%;
@@ -295,7 +311,7 @@ input[type="date"] {
           width: 40%;
           margin: 0 auto;
           padding: 20px;
-          background: linear-gradient(to bottom, #f1c40f, #2ecc71);
+          background: #2ecc71;
           border: 1px solid #2c3e50;
           border-radius: 5px;
         }
@@ -346,9 +362,9 @@ input[type="date"] {
         }
         
 /*           RM */
-#education-loan h2{
+/* #education-loan h2{
 
-}
+} */
 
 
 

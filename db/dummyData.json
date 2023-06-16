@@ -1,0 +1,122 @@
+[
+  {
+    "merchant": "QUIKPPAY LTD",
+    "amountdue": "550,000",
+    "loanInterest": "50,000",
+    "dueDate": "25-09-2023",
+    "total": "600,000",
+    "monthlyPayback": "5,000",
+    "status": "Active",
+    "duration": "12 months",
+    "LoanType":"Personal",
+    "loanDate": "05-11-2021"
+  },
+  {
+    "merchant": "ABC Company",
+    "amountdue": "300,000",
+    "loanInterest": "30,000",
+    "dueDate": "12-10-2023",
+    "total": "330,000",
+    "monthlyPayback": "5,000",
+    "status": "Pending",
+    "duration": "18 months",
+    "LoanType":"Education",
+    "loanDate": "05-11-2021"
+  },
+  {
+    "merchant": "XYZ Corporation",
+    "amountdue": "750,000",
+    "loanInterest": "75,000",
+    "dueDate": "08-11-2023",
+    "total": "825,000",
+    "monthlyPayback": "5,000",
+    "status": "Pending",
+    "duration": "7 months",
+    "LoanType":"Personal",
+    "loanDate": "05-11-2021"
+  },
+  {
+    "merchant": "Acme Inc",
+    "amountdue": "200,000",
+    "loanInterest": "20,000",
+    "dueDate": "17-09-2023",
+    "total": "220,000",
+    "monthlyPayback": "5,000",
+    "status": "completed",
+    "duration": "5 months",
+    "LoanType":"Business",
+    "loanDate": "05-11-2021"
+  },
+  {
+    "merchant": "E-commerce Co",
+    "amountdue": "400,000",
+    "loanInterest": "40,000",
+    "dueDate": "05-10-2023",
+    "total": "440,000",
+    "monthlyPayback": "5,000",
+    "status": "Pending",
+    "duration": "12 months",
+    "LoanType":"Housing",
+    "loanDate": "05-11-2021"
+  },
+  {
+    "merchant": "Tech Solutions",
+    "amountdue": "600,000",
+    "loanInterest": "60,000",
+    "dueDate": "22-09-2023",
+    "total": "660,000",
+    "monthlyPayback": "5,000",
+    "status": "Pending",
+    "duration": "12 months",
+    "LoanType":"Business",
+    "loanDate": "05-11-2021"
+  },
+  {
+    "merchant": "Fashion Outlet",
+    "amountdue": "350,000",
+    "loanInterest": "35,000",
+    "dueDate": "30-09-2023",
+    "total": "385,000",
+    "monthlyPayback": "5,000",
+    "status": "Active",
+    "duration": "12 months",
+    "LoanType":"Personal",
+    "loanDate": "05-11-2021"
+  },
+  {
+    "merchant": "Globe Services",
+    "amountdue": "450,000",
+    "loanInterest": "45,000",
+    "dueDate": "11-10-2023",
+    "total": "495,000",
+    "monthlyPayback": "5,000",
+    "status": "completed",
+    "duration": "12 months",
+    "LoanType":"Personal",
+    "loanDate": "05-11-2021"
+  },
+  {
+    "merchant": "Food Delights",
+    "amountdue": "250,000",
+    "loanInterest": "25,000",
+    "dueDate": "03-11-2023",
+    "total": "275,000",
+    "monthlyPayback": "5,000",
+    "status": "Pending",
+    "duration": "12 months",
+    "LoanType":"Education",
+    "loanDate": "05-11-2021"
+  },
+  {
+    "merchant": "Home Furnishings",
+    "amountdue": "500,000",
+    "loanInterest": "50,000",
+    "dueDate": "18-09-2023",
+    "total": "550,000",
+    "monthlyPayback": "5,000",
+    "status": "Pending",
+    "duration": "12 months",
+    "LoanType":"Business",
+    "loanDate": "05-11-2021"
+  }
+]
